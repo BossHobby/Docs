@@ -6,5 +6,15 @@ edit_uri: 'https://github.com/BossHobby/Docs/tree/master/docs'
 
 theme:
   name: material
+  logo: assets/img/logo.svg
+
   palette:
     scheme: default
+
+  include_search_page: false
+  search_index_only: true
+
+  language: en
+  features:
+    - navigation.instant
+    - navigation.tracking
