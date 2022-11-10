@@ -1,0 +1,10 @@
+site_name: QUICKSILVER
+
+repo_name: BossHobby/QUICKSILVER
+repo_url: https://github.com/BossHobby/QUICKSILVER/releases/
+edit_uri: 'https://github.com/BossHobby/Docs/tree/master/docs'
+
+theme:
+  name: material
+  palette:
+    scheme: default
