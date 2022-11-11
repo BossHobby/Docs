@@ -7,6 +7,11 @@ edit_uri: 'https://github.com/BossHobby/Docs/tree/master/docs'
 theme:
   name: material
   logo: assets/img/logo.svg
+  favicon: assets/img/favicon.png
+  custom_dir: overrides
+  font:
+    text: Roboto
+    code: Roboto Mono
 
   palette:
     scheme: default
