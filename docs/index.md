@@ -1,4 +1,4 @@
-# Welcome to the QUICKSILVER wiki!
+# Welcome to the QUICKSILVER Docs!
 
 <img src="../assets/img/logo.svg">
 
