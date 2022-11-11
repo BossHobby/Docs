@@ -8,7 +8,6 @@ theme:
   name: material
   logo: assets/img/logo.svg
   favicon: assets/img/favicon.png
-  custom_dir: overrides
   font:
     text: Roboto
     code: Roboto Mono
