@@ -8,16 +8,12 @@ theme:
   name: material
   logo: assets/img/logo.svg
   favicon: assets/img/favicon.png
-  
   font:
     text: Roboto
     code: Roboto Mono
-    
 
   palette:
-    scheme: slate
-    primary: green
-    accent: light green
+    scheme: default
 
   include_search_page: false
   search_index_only: true
@@ -26,4 +22,3 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - toc.integrate
