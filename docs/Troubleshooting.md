@@ -1,4 +1,24 @@
-### No serial port showing after flashing. (Windows)
+## DFU (Bootloader) not being detected. (Windows)
 
-Unplug the fc and replug to ensure a power cycle, download and open [Zadig](https://github.com/pbatard/libwdi/releases/download/v1.4.1/zadig-2.7.exe), choose **QUICKSILVER** in the dropdown and select **USB serial** in the right hand pane. Click **replace driver** and wait for it to finish. Power cycle again then try the configurator.
+Hold the boot button or use the **Reset to Bootloader** function in the configurator  
+Download and open [Zadig](https://zadig.akeo.ie/)
 
+![zadig_list_all_devices](../assets/img/zadig_all_devices.png)
+Ensure `List All Devices` is selected in the options.
+
+![zadig_dfu](../assets/img/zadig_dfu.png)
+Choose `STM32 BOOTLOADER` in the dropdown and select `WinUSB` in the right hand pane.  
+Click `Replace Driver` and wait for it to finish.
+Try flashing again in the configurator.
+
+## No serial port showing after flashing. (Windows)
+
+Unplug the fc and replug to ensure a power cycle  
+Download and open [Zadig](https://zadig.akeo.ie/)
+
+![zadig_list_all_devices](../assets/img/zadig_all_devices.png)
+Ensure `List All Devices` is selected in the options.
+
+![zadig_serial](../assets/img/zadig_serial.png)
+Choose `QUICKSILVER` in the dropdown and select `USB serial (CDC)` in the right hand pane.  
+Click `Replace Driver` and wait for it to finish. Power cycle again then try the configurator.
