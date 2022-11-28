@@ -1,6 +1,6 @@
 :root > * {
-    --md-primary-fg-color:        hsl(96deg 53% 43%);
-    --md-primary-fg-color--light: hsl(96deg 53% 48%);
+    --md-primary-fg-color:        hsl(96, 53%, 43%);
+    --md-primary-fg-color--light: hsl(96, 53%, 48%);
     --md-primary-fg-color--dark:  hsl(96deg 53% 40%);
 
 
@@ -43,7 +43,7 @@
     --md-code-hl-variable-color: var(--md-default-fg-color--light);
     --md-typeset-color: var(--md-default-fg-color);
     --md-typeset-a-color: var(--md-primary-fg-color);
-    --md-typeset-mark-color: rgba(66,135,255,.3);
+    --md-typeset-mark-color: rgba(91,155,41,.5);
     --md-typeset-kbd-color: hsla(0,0%,94%,0.12);
     --md-typeset-kbd-accent-color: hsla(0,0%,94%,0.2);
     --md-typeset-kbd-border-color: hsla(0,0%,14%,1);
