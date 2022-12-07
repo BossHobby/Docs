@@ -1,46 +1,30 @@
+[data-md-color-scheme="slate"] {
+  --md-slate-fg-color: hsla(0,0%,95%,1);
+  --md-slate-fg-color--light: hsla(0,0%,90%,0.62);
+  --md-slate-fg-color--lighter: hsla(0,0%,90%,0.32);
+  --md-slate-fg-color--lightest: hsla(0,0%,90%,0.12);
+  --md-slate-bg-color: hsla(0,0%,19%,1);
+  --md-slate-bg-color--light: hsla(0,0%,19%,0.54);
+  --md-slate-bg-color--lighter: hsla(0,0%,19%,0.26);
+  --md-slate-bg-color--lightest: hsla(0,0%,19%,0.07);
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-fg-color: rgb(15, 15, 15);
+  --md-default-fg-color--light: rgba(161, 159, 159, 0.887);
+  --md-default-fg-color--lighter: rgba(41, 40, 40, 0.758);
+  --md-default-fg-color--lightest: rgba(31, 30, 30, 0.918);
+  --md-default-bg-color: rgb(243, 239, 239);
+  --md-default-bg-color--light: rgba(226, 223, 223, 0.771);
+  --md-default-bg-color--lighter: rgba(209, 206, 206, 0.921);
+  --md-default-bg-color--lightest: rgba(234, 231, 231, 0.927);
+}
+
 :root > * {
     --md-primary-fg-color:        hsl(96, 53%, 43%);
     --md-primary-fg-color--light: hsl(96, 53%, 48%);
     --md-primary-fg-color--dark:  hsl(96deg 53% 40%);
 
-
-    [data-md-color-scheme="slate"] {
-        --md-slate-fg-color: hsla(0,0%,95%,1);
-        --md-slate-fg-color--light: hsla(0,0%,90%,0.62);
-        --md-slate-fg-color--lighter: hsla(0,0%,90%,0.32);
-        --md-slate-fg-color--lightest: hsla(0,0%,90%,0.12);
-        --md-slate-bg-color: hsla(0,0%,19%,1);
-        --md-slate-bg-color--light: hsla(0,0%,19%,0.54);
-        --md-slate-bg-color--lighter: hsla(0,0%,19%,0.26);
-        --md-slate-bg-color--lightest: hsla(0,0%,19%,0.07);
-      }
-
-    [data-md-color-scheme="default"] {
-        --md-default-fg-color: rgb(15, 15, 15);
-        --md-default-fg-color--light: rgba(161, 159, 159, 0.887);
-        --md-default-fg-color--lighter: rgba(41, 40, 40, 0.758);
-        --md-default-fg-color--lightest: rgba(31, 30, 30, 0.918);
-        --md-default-bg-color: rgb(243, 239, 239);
-        --md-default-bg-color--light: rgba(226, 223, 223, 0.771);
-        --md-default-bg-color--lighter: rgba(209, 206, 206, 0.921);
-        --md-default-bg-color--lightest: rgba(234, 231, 231, 0.927);
-      }
-
-    --md-code-fg-color: hsla(0,0%,106%,1);
-    --md-code-bg-color: hsla(0,0%,50%,1);
-    --md-code-hl-color: rgba(66,135,255,.15);
-    --md-code-hl-number-color: #e6695b;
-    --md-code-hl-special-color: #f06090;
-    --md-code-hl-function-color: #c973d9;
-    --md-code-hl-constant-color: #9383e2;
-    --md-code-hl-keyword-color: #6791e0;
-    --md-code-hl-string-color: #2fb170;
-    --md-code-hl-name-color: var(--md-code-fg-color);
-    --md-code-hl-operator-color: var(--md-default-fg-color--light);
-    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
-    --md-code-hl-comment-color: var(--md-default-fg-color--light);
-    --md-code-hl-generic-color: var(--md-default-fg-color--light);
-    --md-code-hl-variable-color: var(--md-default-fg-color--light);
     --md-typeset-color: var(--md-default-fg-color);
     --md-typeset-a-color: var(--md-primary-fg-color);
     --md-typeset-mark-color: rgba(91,155,41,.5);
@@ -48,13 +32,16 @@
     --md-typeset-kbd-accent-color: hsla(0,0%,94%,0.2);
     --md-typeset-kbd-border-color: hsla(0,0%,14%,1);
     --md-typeset-table-color: hsla(0,0%,95%,0.12);
+
     --md-admonition-fg-color: var(--md-default-fg-color);
     --md-admonition-bg-color: var(--md-default-bg-color);
+
     --md-footer-bg-color: hsla(0,0%,12%,0.87);
     --md-footer-bg-color--dark: hsla(0,0%,10%,1);
-    --md-shadow-z1: 0 0.2rem 0.5remrgba(0,0,0,.2),0 0 0.05remrgba(0,0,0,.1);
-    --md-shadow-z2: 0 0.2rem 0.5remrgba(0,0,0,.3),0 0 0.05remrgba(0,0,0,.25);
-    --md-shadow-z3: 0 0.2rem 0.5remrgba(0,0,0,.4),0 0 0.05remrgba(0,0,0,.35);
+
+    --md-shadow-z1: 0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.1);
+    --md-shadow-z2: 0 0.2rem 0.5rem rgba(0,0,0,.3),0 0 0.05rem rgba(0,0,0,.25);
+    --md-shadow-z3: 0 0.2rem 0.5rem rgba(0,0,0,.4),0 0 0.05rem rgba(0,0,0,.35);
 }
 
 .md-header__button.md-logo {
