@@ -96,10 +96,18 @@ We also advise setting Turtle mode to ON in **_Receiver_** tab which means all y
 
 ## OSD
 
+The osd menu is accessed by performing a RIGHT-RIGHT-RIGHT [stick gesture](/Features/#stick-gestures) on the ROLL/PITCH stick.
+
 OSD font and boot logo can be changed, select and upload.  
 Each element can be positioned by altering the x,y numbers (0,0 is top left corner of the screen) and the font style can be inverted.  
-Callsign must be upper case only.  
+Callsign must be upper case only.
+
 All OSD element settings are also available via the OSD menu. (stick gesture right,right,right)
+Most settings are available via the osd menu.
+Use the ROLL/PITCH stick to navigate the menus, RIGHT enters a category and LEFT exits out to the previous level.
+After making changes, SAVE+EXIT
+If changes are made and osd is exited without SAVE+EXIT - changes will be temporarily applied but will not persist after battery disconnect.
+Some changes will cause a reboot after saving.
 
 ## HDZero
 

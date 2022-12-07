@@ -1,6 +1,6 @@
 Connect via usb as for flashing. Press the **_CONNECT_** button and select the offered port in the pop up window. Once connected you will be in the Profile tab.
 
-Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work then download [Zadig](https://zadig.akeo.ie/), run it and select **QUICKSILVER** from the dropdown and select **USB Serial** on the right side, wait for it to complete then replug for good measure and try the configurator again. [Troubleshooting Page](https://docs.bosshobby.com/Troubleshooting/)
+Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work refer to the [Troubleshooting Page](/Troubleshooting/).
 
 Every time you make a change on a tab remember to click **_APPLY_** before leaving the tab. There will always be a confirmation pop up after successfully applying changes.
 
@@ -53,7 +53,6 @@ Two rate profile settings are available.
 <img src="../assets/img/QS_rates_1.png" width=100%>
 <img src="../assets/img/QS_rates_2.png" width=100%>
 
-
 There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and **_LOAD_**
 
 We advise leaving most of the other settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing. More details will be added soon.
@@ -64,7 +63,7 @@ We advise leaving most of the other settings here at default values and asking i
 
 ## Receiver
 
-As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.                       
+As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.  
 (Some flight controllers may need a lipo connected to power the rx)
 
 Once bound to the tx it will show here and bind information can be saved using "stick gesture" up-up-up followed by down-down-down.
@@ -74,11 +73,12 @@ Expresslrs users can enter the bind phrase here if necessary.
 <img src="../assets/img/QS_receiver_1.png" width=100%>
 <img src="../assets/img/QS_receiver_2.png" width=100%>
 
-### Aux channel selection.  
+### Aux channel selection.
+
 Aux switches are only two way, high or low in Quicksilver.  
 You must set an arm switch, Levelmode is required for both Horizon and Racemode to work.  
 If only Arm is set you will be in Acro/Rate mode.  
-To find out about other features operated by Aux channels check [Features](https://docs.bosshobby.com/4.-FEATURES/)
+To find out about other features operated by Aux channels check [Features](/Features/)
 
 <img src="../assets/img/QS_receiver_3.png" width=100%>
 
@@ -100,7 +100,6 @@ Use the **_Motor Test_** function to check position and rotation.
 If the direction of rotation needs changed the **_Esc Settings_** function will allow this.
 
 <img src="../assets/img/QS_motor_1.png" width=100%>
-
 
 ## State
 

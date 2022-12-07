@@ -1,20 +1,18 @@
-## Get the QS_Configurator
+## Get the Quicksilver Configurator
 
-QS_Configurator is a browser-based application that allows you to flash, and configure QUICKSILVER on your quad through the USB port.
+Quicksilver Configurator is a browser-based application that allows you to flash and configure QUICKSILVER on your quad through the USB port.
 
-There is an online vesrion here:
+There is an online version here:  
+[Quicksilver Configurator](https://config.bosshobby.com/)
 
-[QS_online_configurator](https://config.bosshobby.com/)
-
-The standalone version can be downloaded here:
-
-[QS_Configurator releases page](https://github.com/BossHobby/Configurator)
+The standalone version can be downloaded here:  
+[Quicksilver Configurator releases page](https://github.com/BossHobby/Configurator)
 
 Download and unzip the version which matches your operating system.
 
 - quic-config-windows-amd64.zip for Windows
 - quic-config-darwin-amd64.zip for Mac
-- quic-config-Linux-amd64.zip for Linux
+- quic-config-linux-amd64.zip for Linux
 
 ## Flashing a Hex File
 
@@ -22,10 +20,10 @@ Download and unzip the version which matches your operating system.
 
 Open the "quic-config" app. This will open a new browser tab with the configurator app. Click on the **FLASH** tab to go to the firmware flash page. The online version works excatly the same way.
 
-### Whilst in the **FLASH** tab you will _**NOT**_ be using the **CONNECT** button in the top right
+==Whilst in the **FLASH** tab you will _**NOT**_ be using the **CONNECT** button in the top right==
 
 Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, otherwise you can use the **RESET TO BOOTLOADER** button on the GUI.  
-The **NO DFU DETECTED** warning message will disappear when the flight controller is recognized to be in DFU mode. If it is not recognized automatically, check the [Troubleshooting Page](https://docs.bosshobby.com/Troubleshooting/)
+The **NO DFU DETECTED** warning message will disappear when the flight controller is recognized to be in DFU mode. If it is not recognized automatically, check the [Troubleshooting Page](/Troubleshooting/)
 
 Select the _Source_ from which you want to retrieve a hex file to flash. Selecting BossHobby/QUICKSILVER will download the firmware from github, or choose LOCAL if you have built your own hex file from the source code.
 
@@ -35,8 +33,8 @@ Finally, select a _Target_ file which matches your hardware. If you don't know w
 
 Select the **FLASH** button to initiate the flashing process. Progress bars will appear as the flashing process is performed and a feedback will be displayed in the upper right hand corner when complete
 
-<img src="../assets/img/QS_flash_1.png" width=100%>
-<img src="../assets/img/QS_flash_2.png" width=100%>
+<img src="/assets/img/QS_flash_1.png" width=100%>
+<img src="/assets/img/QS_flash_2.png" width=100%>
 
 After flashing, proceed to the next stage of the wiki - CONFIGURING QUICKSILVER. If your flash was unsuccessful for any reason - do not stress. The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash. The quic-config app will generate a log file which will aid developers in solving the problem so please make a copy of this log and pass it along to a dev. Then, restart the quic-config app (also close the command window in the background), and manually initiate dfu by plugging the flight controller in with the boot button pressed, and try again.
 

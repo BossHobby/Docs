@@ -4,6 +4,16 @@ repo_name: BossHobby/QUICKSILVER
 repo_url: https://github.com/BossHobby/QUICKSILVER/releases/
 edit_uri: 'https://github.com/BossHobby/Docs/tree/master/docs'
 
+nav:
+  - Home: index.md
+  - Quick Start: Quick-Start-Guide.md
+  - Configuring Quicksilver: Configuring-Quicksilver.md
+  - Features: Features.md
+  - Troubleshooting: Troubleshooting.md
+  - About:
+      - About/Development.md
+      - About/Contributing.md
+
 theme:
   name: material
   logo: assets/img/Logo_Clean.svg
@@ -14,7 +24,6 @@ theme:
     code: Roboto Mono
 
   palette:
-
     # Palette toggle for dark mode
     - scheme: slate
       toggle:
@@ -24,8 +33,8 @@ theme:
     # Palette toggle for light mode
     - scheme: default
       toggle:
-        icon: material/brightness-7 
-        name: Switch to dark mode    
+        icon: material/brightness-7
+        name: Switch to dark mode
 
   include_search_page: false
   search_index_only: true
@@ -44,4 +53,3 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
-
