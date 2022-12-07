@@ -47,19 +47,27 @@ The **_REFRESH_** button should cause the vtx settings to show up.
 
 Rates, PIDs and Filters are all set here.
 
+### Stick Rates
+
+<img src="../assets/img/QS_rates_1.png" width=100%>
 Choose Silverware rates (default) or Betaflight rates or Actual rates.
 Two rate profile settings are available.
 
-<img src="../assets/img/QS_rates_1.png" width=100%>
+### Throttle Settings
+
 <img src="../assets/img/QS_rates_2.png" width=100%>
 
-There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and **_LOAD_**
-
-We advise leaving most of the other settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing. More details will be added soon.
+### PID
 
 <img src="../assets/img/QS_rates_3.png" width=100%>
 
+There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and **_LOAD_**
+
+### Filter
+
 <img src="../assets/img/QS_rates_4.png" width=100%>
+A given fitler pass can be disabled by setting the `Type` to `None`. For example a single gyro filter can be achieved by setting the `Gyro Pass 2 Type` to `None`.  
+Unless otherwise recommended we advise leaving most of the settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing.
 
 ## Receiver
 
