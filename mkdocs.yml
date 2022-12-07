@@ -49,6 +49,8 @@ extra_css:
   - assets/style/style.css
 
 markdown_extensions:
+  - tables
+  - attr_list
   - admonition
   - pymdownx.critic
   - pymdownx.caret
@@ -56,3 +58,6 @@ markdown_extensions:
   - pymdownx.tilde
   - pymdownx.details
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

@@ -5,11 +5,16 @@
 Quicksilver uses stick gestures for various functions. We use many inherited from Silverware plus some new ones.
 Stick gestures are performed using just the Pitch/Roll stick and must be done side to side or up and down, not at an angle. They are fairly timing sensitive so for example gesture down,down,down should be performed about the same speed you'd say it out loud.
 
-<img src="../assets/img/stick_gestures.png" width=75%>
-
-A new gesture was added in order to ensure redrawing of the Quicksilver OSD after accessing the HDZero osd menus. Let,Right,Left.
-
-There are also commands for PID tuning which will be added later
+| Stick Gesture             | Action                                                                            |
+| :------------------------ | :-------------------------------------------------------------------------------- |
+| `UP`, `UP`, `UP`          | set bind flag                                                                     |
+| `DOWN`, `DOWN`, `DOWN`    | save to flash, including bind. if not other gesture was performed, calibrate gyro |
+| `RIGHT`, `RIGHT`, `RIGHT` | enter osd                                                                         |
+| `LEFT`, `RIGHT`, `LEFT`   | re-draw osd, useful for hdzero                                                    |
+| `UP`, `DOWN`, `UP`        | Cycle to next pid term (P, I, D)                                                  |
+| `UP`, `DOWN`, `DOWN`      | Cycle to next axis (Roll/Pitch, Yaw)                                              |
+| `UP`, `DOWN`, `RIGHT`     | Increase current pid value by 10%                                                 |
+| `UP`, `DOWN`, `LEFT`      | Decrease current pid value by 10%                                                 |
 
 ## Voltage
 
