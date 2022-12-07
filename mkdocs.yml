@@ -49,7 +49,10 @@ extra_css:
   - assets/style/style.css
 
 markdown_extensions:
+  - admonition
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.superfences

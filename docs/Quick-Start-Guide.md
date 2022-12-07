@@ -16,28 +16,29 @@ Download and unzip the version which matches your operating system.
 
 ## Flashing a Hex File
 
-==Note it is best practise to power cycle the fc after flashing and before connecting to the configurator for setup==
+Open the Configurator. Click on the `Flash` tab to go to the firmware flash page.
 
-Open the "quic-config" app. This will open a new browser tab with the configurator app. Click on the **FLASH** tab to go to the firmware flash page. The online version works excatly the same way.
+!!! info
 
-==Whilst in the **FLASH** tab you will _**NOT**_ be using the **CONNECT** button in the top right==
+    Whilst in the `Flash` tab you will _**NOT**_ be using the `Connect` button in the top right
 
-Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, otherwise you can use the **RESET TO BOOTLOADER** button on the GUI.  
-The **NO DFU DETECTED** warning message will disappear when the flight controller is recognized to be in DFU mode. If it is not recognized automatically, check the [Troubleshooting Page](/Troubleshooting/)
+![Flashing](/assets/img/QS_flash.gif)
+
+Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, or by clicking the `Reset to Bootloader` button on the GUI. If no compatible device is found, check the [Troubleshooting Page](/Troubleshooting/).
 
 Select the _Source_ from which you want to retrieve a hex file to flash. Selecting BossHobby/QUICKSILVER will download the firmware from github, or choose LOCAL if you have built your own hex file from the source code.
 
-Next select the version (_Release_) to flash - make sure the hex file version is compatible with the gui version you are using by checking the release notes [here](https://github.com/BossHobby/QUICKSILVER/releases).
+Next select the version (_Release_) to flash - make sure the hex file version is compatible with the gui version you are using by checking the [release notes](https://github.com/BossHobby/QUICKSILVER/releases).
 
-Finally, select a _Target_ file which matches your hardware. If you don't know which file to flash, make sure to ask [here](https://discord.gg/xZa6Pwwxvy), and get advice from someone experienced with the firmware. The naming convention for hex files is target_name.motor_type.receiver_type. Receiver types with names like frsky or redpine are onboard spi connected receivers, and serial refers to any serial receiver connected to a uart.
+Finally, select a _Target_ file which matches your hardware. If you don't know which file to flash, make sure to ask [on our discord](https://discord.gg/xZa6Pwwxvy), and get advice from someone experienced with the firmware. The naming convention for hex files is `<target_name>_<receiver_type>.<motor_type>`.  
+Receiver types with names like frsky or elrs are onboard spi connected receivers and targets without a receiver type refers to serial receivers connected to a uart.
 
-Select the **FLASH** button to initiate the flashing process. Progress bars will appear as the flashing process is performed and a feedback will be displayed in the upper right hand corner when complete
+Select the `Flash` button to initiate the flashing process. Progress bars will appear as the flashing process is performed and a feedback will be displayed in the upper right hand corner when complete
 
-<img src="/assets/img/QS_flash_1.png" width=100%>
-<img src="/assets/img/QS_flash_2.png" width=100%>
+!!! note
 
-After flashing, proceed to the next stage of the wiki - CONFIGURING QUICKSILVER. If your flash was unsuccessful for any reason - do not stress. The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash. The quic-config app will generate a log file which will aid developers in solving the problem so please make a copy of this log and pass it along to a dev. Then, restart the quic-config app (also close the command window in the background), and manually initiate dfu by plugging the flight controller in with the boot button pressed, and try again.
+    It is best practise to power cycle the fc after flashing and before connecting to the configurator for setup
 
-## Video Tutorial
-
-[![How to flash and configure Quicksilver on a Mobula6 (Frsky)](https://i.ytimg.com/vi/8GxPwAuPvwY/hqdefault.jpg)](http://www.youtube.com/watch?v=8GxPwAuPvwY "How to flash and configure Quicksilver on a Mobula6 (Frsky)")
+After flashing, proceed to [Configuring Quicksilver](/Configuring-Quicksilver).  
+If your flash was unsuccessful for any reason - do not stress. The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash.
+To recover the flight-controller, manually initiate dfu by plugging the flight controller in with the boot button pressed, and try again.
