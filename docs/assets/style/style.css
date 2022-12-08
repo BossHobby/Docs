@@ -42,3 +42,7 @@
 .md-header__button.md-logo img {
     height: 2.2rem !important;
 }
+
+.md-typeset .admonition {
+  font-size: .74rem;
+}
