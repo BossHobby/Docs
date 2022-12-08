@@ -1,12 +1,15 @@
 [data-md-color-scheme="slate"] {
-  --md-slate-fg-color: hsla(0,0%,95%,1);
-  --md-slate-fg-color--light: hsla(0,0%,90%,0.62);
-  --md-slate-fg-color--lighter: hsla(0,0%,90%,0.32);
-  --md-slate-fg-color--lightest: hsla(0,0%,90%,0.12);
-  --md-slate-bg-color: hsla(0,0%,19%,1);
-  --md-slate-bg-color--light: hsla(0,0%,19%,0.54);
-  --md-slate-bg-color--lighter: hsla(0,0%,19%,0.26);
-  --md-slate-bg-color--lightest: hsla(0,0%,19%,0.07);
+  --md-default-fg-color: hsla(0,0%,95%,1);
+  --md-default-fg-color--light: hsla(0,0%,90%,0.62);
+  --md-default-fg-color--lighter: hsla(0,0%,90%,0.32);
+  --md-default-fg-color--lightest: hsla(0,0%,90%,0.12);
+  --md-default-bg-color: hsla(0,0%,19%,1);
+  --md-default-bg-color--light: hsla(0,0%,19%,0.54);
+  --md-default-bg-color--lighter: hsla(0,0%,19%,0.26);
+  --md-default-bg-color--lightest: hsla(0,0%,19%,0.07);
+
+  --md-code-fg-color: hsla(0,0%,86%,1);
+  --md-code-bg-color: hsla(0,0%,15%,1);
 }
 
 [data-md-color-scheme="default"] {
@@ -18,30 +21,15 @@
   --md-default-bg-color--light: rgba(226, 223, 223, 0.771);
   --md-default-bg-color--lighter: rgba(209, 206, 206, 0.921);
   --md-default-bg-color--lightest: rgba(234, 231, 231, 0.927);
+
+  --md-code-fg-color: #36464e;
+  --md-code-bg-color: #f5f5f5;
 }
 
 :root > * {
     --md-primary-fg-color:        hsl(96, 53%, 43%);
     --md-primary-fg-color--light: hsl(96, 53%, 48%);
-    --md-primary-fg-color--dark:  hsl(96deg 53% 40%);
-
-    --md-typeset-color: var(--md-default-fg-color);
-    --md-typeset-a-color: var(--md-primary-fg-color);
-    --md-typeset-mark-color: rgba(91,155,41,.5);
-    --md-typeset-kbd-color: hsla(0,0%,94%,0.12);
-    --md-typeset-kbd-accent-color: hsla(0,0%,94%,0.2);
-    --md-typeset-kbd-border-color: hsla(0,0%,14%,1);
-    --md-typeset-table-color: hsla(0,0%,95%,0.12);
-
-    --md-admonition-fg-color: var(--md-default-fg-color);
-    --md-admonition-bg-color: var(--md-default-bg-color);
-
-    --md-footer-bg-color: hsla(0,0%,12%,0.87);
-    --md-footer-bg-color--dark: hsla(0,0%,10%,1);
-
-    --md-shadow-z1: 0 0.2rem 0.5rem rgba(0,0,0,.2),0 0 0.05rem rgba(0,0,0,.1);
-    --md-shadow-z2: 0 0.2rem 0.5rem rgba(0,0,0,.3),0 0 0.05rem rgba(0,0,0,.25);
-    --md-shadow-z3: 0 0.2rem 0.5rem rgba(0,0,0,.4),0 0 0.05rem rgba(0,0,0,.35);
+    --md-primary-fg-color--dark:  hsl(96, 53% 40%);
 }
 
 .md-header__button.md-logo {
