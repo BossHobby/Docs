@@ -81,7 +81,7 @@ Expresslrs users can enter the bind phrase here if necessary.
 <img src="/assets/img/QS_receiver_1.png" width=100%>
 <img src="/assets/img/QS_receiver_2.png" width=100%>
 
-### Aux channel selection.
+### Aux Channels
 
 Aux switches are only two way, high or low in Quicksilver.  
 You must set an arm switch, Levelmode is required for both Horizon and Racemode to work.  
@@ -99,7 +99,9 @@ Select and move various elements and alter callsign.
 
 ## Motor
 
-**REMOVE PROPS BEFORE ACTIVATING ANYTHING ON THIS TAB**
+!!! warning
+
+    **REMOVE PROPS BEFORE ACTIVATING ANYTHING ON THIS TAB**
 
 A lipo will need to be connected for most of the functions to work.
 
