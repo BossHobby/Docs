@@ -39,6 +39,8 @@ Select the `Flash` button to initiate the flashing process. Progress bars will a
 
     It is best practise to power cycle the fc after flashing and before connecting to the configurator for setup
 
-After flashing, proceed to [Configuring Quicksilver](/Configuring-Quicksilver).  
-If your flash was unsuccessful for any reason - do not stress. The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash.
+After flashing, proceed to [Configuring Quicksilver](/Configuring-Quicksilver).
+
+If your flash was unsuccessful for any reason - do not stress.  
+The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash.  
 To recover the flight-controller, manually initiate dfu by plugging the flight controller in with the boot button pressed, and try again.
