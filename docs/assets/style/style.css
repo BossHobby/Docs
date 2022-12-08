@@ -1,15 +1,15 @@
 [data-md-color-scheme="slate"] {
-  --md-default-fg-color: hsla(0,0%,95%,1);
-  --md-default-fg-color--light: hsla(0,0%,90%,0.62);
-  --md-default-fg-color--lighter: hsla(0,0%,90%,0.32);
-  --md-default-fg-color--lightest: hsla(0,0%,90%,0.12);
-  --md-default-bg-color: hsla(0,0%,19%,1);
-  --md-default-bg-color--light: hsla(0,0%,19%,0.54);
-  --md-default-bg-color--lighter: hsla(0,0%,19%,0.26);
-  --md-default-bg-color--lightest: hsla(0,0%,19%,0.07);
+  --md-default-fg-color: hsl(0, 0%, 95%);
+  --md-default-fg-color--light: hsl(0, 0%, 75%);
+  --md-default-fg-color--lighter: hsl(0, 0%, 45%);
+  --md-default-fg-color--lightest: hsl(0, 0%, 35%);
+  --md-default-bg-color: hsl(0, 0%, 19%);
+  --md-default-bg-color--light: hsl(0, 0%, 16%);
+  --md-default-bg-color--lighter: hsl(0, 0%, 12%);
+  --md-default-bg-color--lightest: hsl(0, 0%, 3%);
 
-  --md-code-fg-color: hsla(0,0%,86%,1);
-  --md-code-bg-color: hsla(0,0%,15%,1);
+  --md-code-fg-color: var(--md-default-fg-color);
+  --md-code-bg-color: var(--md-default-bg-color--lighter);
 }
 
 [data-md-color-scheme="default"] {
@@ -22,14 +22,17 @@
   --md-default-bg-color--lighter: rgba(209, 206, 206, 0.921);
   --md-default-bg-color--lightest: rgba(234, 231, 231, 0.927);
 
-  --md-code-fg-color: #36464e;
-  --md-code-bg-color: #f5f5f5;
+  --md-code-fg-color: var(--md-default-fg-color--lighter);
+  --md-code-bg-color: var(--md-default-bg-color--lighter);
 }
 
 :root > * {
     --md-primary-fg-color:        hsl(96, 53%, 43%);
     --md-primary-fg-color--light: hsl(96, 53%, 48%);
     --md-primary-fg-color--dark:  hsl(96, 53% 40%);
+
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-typeset-a-color: var(--md-primary-fg-color);
 }
 
 .md-header__button.md-logo {
