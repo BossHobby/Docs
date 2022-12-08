@@ -28,7 +28,7 @@ Profiles are saved as .yaml files and can be edited in a code editor.
 We will supply template profiles for some bnf models [here](https://github.com/BossHobby/Templates)
 These are available within the configurator and are applied after flashing your target.
 
-<img src="../assets/img/QS_profile.png" width=100%>
+<img src="/assets/img/QS_profile.png" width=100%>
 
 ## Setup
 
@@ -40,8 +40,8 @@ Select the uart your rx is attached to as well as the Smart Audio connection if 
 
 The **_REFRESH_** button should cause the vtx settings to show up.
 
-<img src="../assets/img/QS_setup_1.png" width=100%>
-<img src="../assets/img/QS_setup_2.png" width=100%>
+<img src="/assets/img/QS_setup_1.png" width=100%>
+<img src="/assets/img/QS_setup_2.png" width=100%>
 
 ## Rates
 
@@ -49,23 +49,23 @@ Rates, PIDs and Filters are all set here.
 
 ### Stick Rates
 
-<img src="../assets/img/QS_rates_1.png" width=100%>
+<img src="/assets/img/QS_rates_1.png" width=100%>
 Choose Silverware rates (default) or Betaflight rates or Actual rates.
 Two rate profile settings are available.
 
 ### Throttle Settings
 
-<img src="../assets/img/QS_rates_2.png" width=100%>
+<img src="/assets/img/QS_rates_2.png" width=100%>
 
 ### PID
 
-<img src="../assets/img/QS_rates_3.png" width=100%>
+<img src="/assets/img/QS_rates_3.png" width=100%>
 
 There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and **_LOAD_**
 
 ### Filter
 
-<img src="../assets/img/QS_rates_4.png" width=100%>
+<img src="/assets/img/QS_rates_4.png" width=100%>
 A given fitler pass can be disabled by setting the `Type` to `None`. For example a single gyro filter can be achieved by setting the `Gyro Pass 2 Type` to `None`.  
 Unless otherwise recommended we advise leaving most of the settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing.
 
@@ -78,8 +78,8 @@ Once bound to the tx it will show here and bind information can be saved using "
 
 Expresslrs users can enter the bind phrase here if necessary.
 
-<img src="../assets/img/QS_receiver_1.png" width=100%>
-<img src="../assets/img/QS_receiver_2.png" width=100%>
+<img src="/assets/img/QS_receiver_1.png" width=100%>
+<img src="/assets/img/QS_receiver_2.png" width=100%>
 
 ### Aux channel selection.
 
@@ -88,14 +88,14 @@ You must set an arm switch, Levelmode is required for both Horizon and Racemode 
 If only Arm is set you will be in Acro/Rate mode.  
 To find out about other features operated by Aux channels check [Features](/Features/)
 
-<img src="../assets/img/QS_receiver_3.png" width=100%>
+<img src="/assets/img/QS_receiver_3.png" width=100%>
 
 ## OSD
 
 Select and move various elements and alter callsign.
 
-<img src="../assets/img/QS_osd_1.png" width=100%>
-<img src="../assets/img/QS_osd_2.png" width=100%>
+<img src="/assets/img/QS_osd_1.png" width=100%>
+<img src="/assets/img/QS_osd_2.png" width=100%>
 
 ## Motor
 
@@ -107,7 +107,7 @@ If your flight controller is in any orientation other than standard you can set 
 Use the **_Motor Test_** function to check position and rotation.
 If the direction of rotation needs changed the **_Esc Settings_** function will allow this.
 
-<img src="../assets/img/QS_motor_1.png" width=100%>
+<img src="/assets/img/QS_motor_1.png" width=100%>
 
 ## State
 
@@ -115,4 +115,4 @@ Live information in time based graphs of many inputs and outputs from the flight
 
 Use to check correct operation of rc inputs from your TX and to monitor gyro and accelerometer values.
 
-<img src="../assets/img/QS_state_1.png" width=100%>
+<img src="/assets/img/QS_state_1.png" width=100%>

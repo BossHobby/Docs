@@ -3,10 +3,10 @@
 Hold the boot button or use the **Reset to Bootloader** function in the configurator  
 Download and open [Zadig](https://zadig.akeo.ie/)
 
-![zadig_list_all_devices](../assets/img/zadig_all_devices.png)
+![zadig_list_all_devices](/assets/img/zadig_all_devices.png)
 Ensure `List All Devices` is selected in the options.
 
-![zadig_dfu](../assets/img/zadig_dfu.png)
+![zadig_dfu](/assets/img/zadig_dfu.png)
 Choose `STM32 BOOTLOADER` in the dropdown and select `WinUSB` in the right hand pane.  
 Click `Replace Driver` and wait for it to finish.
 Try flashing again in the configurator.
@@ -16,10 +16,10 @@ Try flashing again in the configurator.
 Unplug the fc and replug to ensure a power cycle  
 Download and open [Zadig](https://zadig.akeo.ie/)
 
-![zadig_list_all_devices](../assets/img/zadig_all_devices.png)
+![zadig_list_all_devices](/assets/img/zadig_all_devices.png)
 Ensure `List All Devices` is selected in the options.
 
-![zadig_serial](../assets/img/zadig_serial.png)
+![zadig_serial](/assets/img/zadig_serial.png)
 Choose `QUICKSILVER` in the dropdown and select `USB serial (CDC)` in the right hand pane.  
 Click `Replace Driver` and wait for it to finish. Power cycle again then try the configurator.
 
