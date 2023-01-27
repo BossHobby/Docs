@@ -29,4 +29,4 @@ The bmi270 gyros internal filtering differs from what other common gyros (mpu, i
 As such it needs slightly different software filtering. Recommended values are:
 
 - A single gyro pt2 [filter](/Configuring-Quicksilver/#pid) at 100hz
-- About half the d-term [pid gain](/Configuring-Quicksilver/#pid) of what is specified in the presets.
+- About half the d-term [pid gain](/Configuring-Quicksilver/#pid) (or kd) for Pitch and Roll, of what is specified in the presets.
