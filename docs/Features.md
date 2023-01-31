@@ -46,7 +46,17 @@ Motor noise related to rpm is known to have a quadratic relationship with increa
 ## Throttle D-term attenuation (TDA)
 
 Begins to reduce D-term above a set throttle percentage, _TDA breakpoint_ to a maximum reduction, _TDA percent_  
-It works as a companion to the Dynamic D-term filter.
+It works as a companion to the Dynamic D-term filter. 
+
+
+## Throttle Boost 
+
+This adds high pass filtered throttle to the regular throttle, which will give more "sustained" power when making quick, throttle changing, inputs. It was pretty useful on brushed builds in acro, as those motors were a littler lazier to spool up and down.  
+It's not been tested very much with brushless motors.  
+This could affect your throttle management, but could be highly useful if you have a whoop thats a little lazy to pull out of maneuvers.  
+Suggested values are start with 0.1 and raise fairly slowly until you get the desired effect. 
+(We would appreciate feedback on this feature)
+
 
 ## Torque Boost
 
@@ -78,8 +88,7 @@ Quicksilver has a "small error angle strength" and a "large error angle strength
 Conversely, if you want your craft to feel more caffeine powered in response to small stick movements - then this is where you adjust your "small error angle strength"
 
 ## Receivers
-
-All the common radio protocols are supported.  
+  
 Supported protocols:
 
 - sbus (Frsky XM+ etc, Crossfire, Flysky)
@@ -88,14 +97,14 @@ Supported protocols:
 - dsm2 (Spektrum)
 - dsmx (Spektrum)
 - Bayang
-- spi-ELRS
-- spi-Frsky
-- spi-Flysky
-- spi-Redpine
+- SPI-ELRS
+- SPI-Frsky
+- SPI-Flysky
+- SPI-Redpine
 
 The correct protocol will be detected automatically as long as the uart the rx is soldered to is defined.  
-Spi connected rx will be detected if the spi variant target has been flashed.  
-Firmware for spi-rx is baked into Quicksilver depending on the board.  
+SPI connected rx will be detected if the spi variant target has been flashed.  
+Firmware for SPI-rx is baked into Quicksilver depending on the board.  
 ExpressLRS passphrase use is encouraged.
 
 LQ/RSSI
