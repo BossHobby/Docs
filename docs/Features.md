@@ -80,8 +80,22 @@ Conversely, if you want your craft to feel more caffeine powered in response to 
 ## Receivers
 
 All the common radio protocols are supported.  
+Supported protocols:
+
+- sbus (Frsky XM+ etc, Crossfire, Flysky)
+- crsf (Crossfire/Tracer, ELRS)
+- ibus (Flysky, Futaba)
+- dsm2 (Spektrum)
+- dsmx (Spektrum)
+- Bayang
+- spi-ELRS
+- spi-Frsky
+- spi-Flysky
+- spi-Redpine
+
 The correct protocol will be detected automatically as long as the uart the rx is soldered to is defined.  
 Spi connected rx will be detected if the spi variant target has been flashed.  
+Firmware for spi-rx is baked into Quicksilver depending on the board.  
 ExpressLRS passphrase use is encouraged.
 
 LQ/RSSI

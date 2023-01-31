@@ -71,6 +71,8 @@ Unless otherwise recommended we advise leaving most of the settings here at defa
 
 ## Receiver
 
+[Supported protocols](https://docs.bosshobby.com/Features/#receivers)
+
 As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.  
 (Some flight controllers may need a lipo connected to power the rx)
 
