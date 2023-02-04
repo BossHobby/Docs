@@ -25,7 +25,9 @@ The Low Voltage warning feature is tied to fuel gauge voltage. So select a resti
 Note: the low voltage warning (which will flash the lipo cell count upon trigger) is always tied to fuel gauge volts no matter which voltage data you choose to display.
 So even while watching filtered voltage numbers - the cell count will still flash for low voltage based on fuel gauge volts.
 
-The best source for moment to moment voltage telemetry or monitoring is filtered volts. This is hard coded for radio telemetry and is the default option for osd display.
+The best source for moment to moment voltage telemetry or monitoring is filtered volts. This is hard coded for radio telemetry and is the default option for osd display. 
+
+For increased accuracy of the voltage features the voltage as measured by a multimeter or lipo tester of a fully charged lipo can be entered in the configurator along with the reported telemetry voltage from either the osd or your tx. Quicksilver will then calculate the correct actual value to use.
 
 ## Filters
 
