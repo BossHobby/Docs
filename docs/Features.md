@@ -128,7 +128,10 @@ We also advise setting Turtle mode to ON in **_Receiver_** tab which means all y
 
 The osd menu is accessed by performing a RIGHT-RIGHT-RIGHT [stick gesture](/Features/#stick-gestures) on the ROLL/PITCH stick.
 
-OSD font and boot logo can be changed, select and upload.  
+OSD font and boot logo can be changed, select and upload.
+
+The OSD chip on the fc stores font and boot logo so if you want the Quicksilver boot logo you must upload a font once, it will then persist through future firmware flashes. 
+
 Each element can be positioned by altering the x,y numbers (0,0 is top left corner of the screen) and the font style can be inverted.  
 Callsign must be upper case only.
 
@@ -141,4 +144,5 @@ Some changes will cause a reboot after saving.
 
 ## HDZero
 
-Hdzero setup is easy as you only have to specify the uart that the vtx is connected to, everything else will be set. Left,right,left stick gesture redraws Quicksilver OSD after using the HDZero menus. If using HDZero it is important to power on the vrx before vtx.
+Hdzero setup is easy as you only have to specify the uart that the vtx is connected to, everything else will be set. Left,right,left stick gesture redraws Quicksilver OSD after using the HDZero menus. If using HDZero it is important to power on the vrx before vtx. 
+HDZero fonts are handled by the vrx or goggles and a custom Quicksilver HD font is available [here](https://github.com/hd-zero/hdzero-osd-font-library)
