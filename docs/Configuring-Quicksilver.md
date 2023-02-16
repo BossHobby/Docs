@@ -76,9 +76,13 @@ Unless otherwise recommended we advise leaving most of the settings here at defa
 As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.  
 (Some flight controllers may need a lipo connected to power the rx)
 
-Once bound to the tx it will show here and bind information can be saved using "stick gesture" up-up-up followed by down-down-down.
+### Binding
 
-Expresslrs users can enter the bind phrase here if necessary.
+Expresslrs - If you are using an spi-rx and have a bindphrase enter it here and click **save**  
+
+Redpine/Frsky - Spi-rx will be in bind mode after flashing, press bind on your transmitter and wait until it says RX_STATUS_BOUND in the configurator, then use gesture **up-up-up** to turn off autobind and follow with gesture **down-down-down** to save the bind. It will say Bind Saved YES to confirm.
+
+
 
 <img src="/assets/img/QS_receiver_1.png" width=100%>
 <img src="/assets/img/QS_receiver_2.png" width=100%>
@@ -87,7 +91,13 @@ Expresslrs users can enter the bind phrase here if necessary.
 
 Aux switches are only two way, high or low in Quicksilver.  
 You must set an arm switch, Levelmode is required for both Horizon and Racemode to work.  
-If only Arm is set you will be in Acro/Rate mode.  
+If only Arm is set you will be in Acro/Rate mode.   
+
+!!! info
+        The **Aux_Prearm** aux channel should be left set to **ON** unless you are using a prearm switch.
+
+  
+
 To find out about other features operated by Aux channels check [Features](/Features/)
 
 <img src="/assets/img/QS_receiver_3.png" width=100%>
