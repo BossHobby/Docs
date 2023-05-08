@@ -87,7 +87,7 @@ Range of acceptable values for stickTransition are from -1 to 1. Do not input a 
 
 Angle Strength adjusts how your craft responds to external forces from bumps to stick inputs
 Quicksilver has a "small error angle strength" and a "large error angle strength" - If you want to adjust your craft's "overreactions" to collisions - the intended path of user intervention is to reduce your "large error angle strength"
-Conversely, if you want your craft to feel more caffeine powered in response to small stick movements - then this is where you adjust your "small error angle strength"
+Conversely, if you want your craft to feel more reactive in response to small stick movements - then this is where you adjust your "small error angle strength"
 
 ## Receivers
   
