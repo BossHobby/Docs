@@ -28,5 +28,5 @@ Click `Replace Driver` and wait for it to finish. Power cycle again then try the
 The bmi270 gyros internal filtering differs from what other common gyros (mpu, icm) come with.
 As such it needs slightly different software filtering. Recommended values are:
 
-- A single gyro pt2 [filter](/Configuring-Quicksilver/#pid) at 100hz
+- A single gyro pt2 [filter](/Configuring-Quicksilver/#filter) at 100hz
 - About half the d-term [pid gain](/Configuring-Quicksilver/#pid) (or kd) for Pitch and Roll, of what is specified in the presets.
