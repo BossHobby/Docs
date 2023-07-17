@@ -36,7 +36,7 @@ In this tab are the basic hardware settings for the flight controller and anythi
 
 Smart Audio for the vtx will show here.
 
-Select the uart your rx is attached to as well as the Smart Audio connection if applicable. There is an HDZero option here also.
+Select the uart your rx is attached to as well as the vtx Smart Audio connection if applicable. There is an HD vtx option here also to allow vtx control over msp.
 
 The **_REFRESH_** button should cause the vtx settings to show up.
 
