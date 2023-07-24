@@ -146,3 +146,11 @@ Some changes will cause a reboot after saving.
 
 Hdzero setup is easy as you only have to specify the uart that the vtx is connected to, everything else will be set. Left,right,left stick gesture redraws Quicksilver OSD after using the HDZero menus. If using HDZero it is important to power on the vrx before vtx. 
 HDZero fonts are handled by the vrx or goggles and a custom Quicksilver HD font is available [here](https://github.com/hd-zero/hdzero-osd-font-library)
+
+
+## Blackbox
+
+Two sample rates are available, 1000Hz capturing all fields and 200Hz capturing filtered gyro and time data for Gyroflow use.
+Files can be downloaded in .btfl format for use with PidToolbox and .quic format for use with the Guacalyzer, our own basic analyzer, available [here](https://bosshobby.github.io/Blackbox-Analyzer/)
+
+

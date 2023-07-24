@@ -36,7 +36,8 @@ In this tab are the basic hardware settings for the flight controller and anythi
 
 Smart Audio for the vtx will show here.
 
-Select the uart your rx is attached to as well as the vtx Smart Audio connection if applicable. There is an HD vtx option here also to allow vtx control over msp.
+Select the uart your rx is attached to as well as the vtx Smart Audio connection if applicable. There is an HD vtx option here also to allow vtx control over msp.  
+Some vtx, especially HD ones, will need powered by lipo before connecting to the configurator in order to be detected
 
 The **_REFRESH_** button should cause the vtx settings to show up.
 
@@ -123,6 +124,12 @@ Use the **_Motor Test_** function to check position and rotation.
 If the direction of rotation needs changed the **_Esc Settings_** function will allow this.
 
 <img src="/assets/img/QS_motor_1.png" width=100%>
+
+## Blackbox
+
+Blackbox recordings can be activated by an AUX switch setup in the Receiver tab and will begin recording on arming when active. Select the sample rate to suit your use case. 1000Hz for analysis or 200Hz for Gyroflow use.
+
+<img src="/assets/img/QS_blackbox_1.png" width=100%>
 
 ## State
 
