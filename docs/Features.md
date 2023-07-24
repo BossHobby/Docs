@@ -154,3 +154,8 @@ Two sample rates are available, 1000Hz capturing all fields and 200Hz capturing 
 Files can be downloaded in .btfl format for use with PidToolbox and .quic format for use with the Guacalyzer, our own basic analyzer, available [here](https://bosshobby.github.io/Blackbox-Analyzer/)
 
 
+## Motor Test
+
+If selected via AUX or in OSD menu the motors will all spin on raising throttle when armed but will not be under PID control, use the pitch/roll stick to activate a single motor depending on stick position, in order to check the function of that motor. Very useful for checking for bent shafts quickly. This is not a flying mode and care must be taken to not spin motors too fast.
+
+
