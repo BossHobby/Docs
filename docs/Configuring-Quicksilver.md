@@ -66,7 +66,7 @@ There are two slots to save a PID profile, choose the preset that most closely m
 ### Filter
 
 <img src="/assets/img/QS_rates_4.png" width=100%>
-A given fitler pass can be disabled by setting the `Type` to `None`. For example a single gyro filter can be achieved by setting the `Gyro Pass 2 Type` to `None`.  
+A given filter pass can be disabled by setting the `Type` to `None`. For example a single gyro filter can be achieved by setting the `Gyro Pass 2 Type` to `None`.  
 Unless otherwise recommended we advise leaving most of the settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing.
 
 ## Receiver
@@ -85,6 +85,7 @@ Redpine/Frsky - Spi-rx will be in bind mode after flashing, press bind on your t
 
 
 <img src="/assets/img/QS_receiver_1.png" width=100%>
+<img src="/assets/img/QS_receiver_4.png" width=100%>
 <img src="/assets/img/QS_receiver_2.png" width=100%>
 
 ### Aux Channels
