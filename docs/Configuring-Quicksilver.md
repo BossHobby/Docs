@@ -39,7 +39,7 @@ Smart Audio for the vtx will show here.
 Select the uart your rx is attached to as well as the vtx Smart Audio connection if applicable. There is an HD vtx option here also to allow vtx control over msp.  
 Some vtx, especially HD ones, will need powered by lipo before connecting to the configurator in order to be detected
 
-Rebooting with a lipo attatched should cause the vtx settings to show up.
+In the case of settings/vtx labels not showing then rebooting with a lipo attatched should cause the vtx to show up.
 
 <img src="/assets/img/QS_setup_1.png" width=100%>
 <img src="/assets/img/QS_setup_2.png" width=100%>
