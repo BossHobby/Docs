@@ -21,7 +21,7 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 !!! Info
 
     Quicksilver calibrates the IMU (gyro) on every boot up of the fc. Connect lipo and place the quad on a flat surface within 15 seconds to get correct calibration.  
-    You can also calibrate at any time by placing the quad level and using the [stick gesture](https://docs.bosshobby.com/Features/#runtime-targets) D,D,D
+    You can also calibrate at any time by placing the quad level and using the [stick gesture](https://docs.bosshobby.com/Features/#stick-gestures) D,D,D
 
 More detail is available below on the contents of each tab.
 
@@ -31,7 +31,7 @@ Here is where you view and save profile information or load a saved profile. You
 
 Profiles are saved as .yaml files and can be edited in a code editor.
 
-Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Unified targets](https://docs.bosshobby.com/Features/#runtime-targets))
+Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Runtime targets](https://docs.bosshobby.com/Features/#runtime-targets))
 
 We will supply template profiles for some bnf models [here](https://github.com/BossHobby/Templates)
 These are available within the configurator and are applied after flashing your target.
