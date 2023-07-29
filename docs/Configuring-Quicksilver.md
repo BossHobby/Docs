@@ -7,10 +7,10 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 ## Quick Setup
 
 1. Name your craft
-2. Make any uart changes needed to get smartadio and serial rx to work.
-3. Adjust Dshot, Digital Idle and prop direction to suit.
+2. Make any uart changes needed to get smartadio or msp-vtx and serial rx to work.
+3. Adjust Dshot, Digital Idle, Turtle Throttle percent and prop direction to suit.
 4. Set up rates and expo and load PID profiles. Filter adjustments should be made after a test flight, defaults are safe.
-5. If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your tx and bind. Save the bind with up,up,up on the pitch stick followed by down,down,down.
+5. If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your transmitter and bind. Save the bind with [stick gesture](https://docs.bosshobby.com/Features/#stick-gestures) U,U,U on the pitch stick followed by D,D,D.
 6. Set Aux channels and flight modes remembering that Quicksilver uses two position switch logic, high or low. Arm is already set on CH5. (Racemode and Horizon mode both require Angle to be active) If no other flight modes are set it will be in Acro/Rate mode only.
 7. Set up OSD.
 8. Check motor direction and order (props off)
@@ -27,9 +27,11 @@ More detail is available below on the contents of each tab.
 
 ## Profile
 
-Here is where you save profile information or load a saved profile. You can also name the craft and see what firmware is on it.
+Here is where you view and save profile information or load a saved profile. You can also name the craft and see which version of the firmware is on it.
 
 Profiles are saved as .yaml files and can be edited in a code editor.
+
+Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Unified targets](https://docs.bosshobby.com/Features/#runtime-targets))
 
 We will supply template profiles for some bnf models [here](https://github.com/BossHobby/Templates)
 These are available within the configurator and are applied after flashing your target.

@@ -9,7 +9,7 @@ In these Docs gestures will be indicated by U,U,U or D,D,D etc.
 | Stick Gesture             | Action                                                                            |
 | :------------------------ | :-------------------------------------------------------------------------------- |
 | `UP`, `UP`, `UP`          | set bind flag                                                                     |
-| `DOWN`, `DOWN`, `DOWN`    | save to flash, including bind. if not other gesture was performed, calibrate gyro |
+| `DOWN`, `DOWN`, `DOWN`    | save to flash, including bind. if no other gesture was performed, calibrate gyro |
 | `RIGHT`, `RIGHT`, `RIGHT` | enter osd                                                                         |
 | `LEFT`, `RIGHT`, `LEFT`   | re-draw osd, useful for hdzero                                                    |
 | `UP`, `DOWN`, `UP`        | Cycle to next pid term (P, I, D)                                                  |
@@ -158,5 +158,10 @@ Files can be downloaded in .btfl format for use with PidToolbox and .quic format
 ## Motor Test
 
 If selected via AUX or in OSD menu the motors will all spin on raising throttle when armed but will not be under PID control, use the pitch/roll stick to activate a single motor depending on stick position, in order to check the function of that motor. Very useful for checking for bent shafts quickly. This is not a flying mode and care must be taken to not spin motors too fast.
+
+
+## Runtime Targets
+
+
 
 
