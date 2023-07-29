@@ -15,7 +15,13 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 7. Set up OSD.
 8. Check motor direction and order (props off)
 9. Test fly
-10. Enjoy 👍
+10. Enjoy 👍  
+
+
+!!! Info
+
+    Quicksilver calibrates the IMU (gyro) on every boot up of the fc. Connect lipo and place the quad on a flat surface within 15 seconds to get correct calibration.  
+    You can also calibrate at any time by placing the quad level and using the [stick gesture](https://docs.bosshobby.com/Features/#stick-gestures) D,D,D
 
 More detail is available below on the contents of each tab.
 

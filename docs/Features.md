@@ -3,7 +3,8 @@
 ## Stick Gestures
 
 Quicksilver uses stick gestures for various functions. We use many inherited from Silverware plus some new ones.
-Stick gestures are performed using just the Pitch/Roll stick and must be done side to side or up and down, not at an angle. They are fairly timing sensitive so for example gesture down,down,down should be performed about the same speed you'd say it out loud.
+Stick gestures are performed using just the Pitch/Roll stick and must be done side to side or up and down, not at an angle. They are fairly timing sensitive so for example gesture down,down,down should be performed about the same speed you'd say it out loud.  
+In these Docs gestures will be indicated by U,U,U or D,D,D etc.
 
 | Stick Gesture             | Action                                                                            |
 | :------------------------ | :-------------------------------------------------------------------------------- |
