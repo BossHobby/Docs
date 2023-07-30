@@ -105,9 +105,9 @@ Supported protocols:
 - SPI-Flysky
 - SPI-Redpine
 
-The correct protocol will be detected automatically as long as the uart the rx is soldered to is defined.  
-SPI connected rx will be detected if the spi variant target has been flashed.  
-Firmware for SPI-rx is baked into Quicksilver depending on the board.  
+The correct protocol will be detected automatically as long as the uart the RX is soldered to is defined.  
+SPI connected RX will be detected if the SPI variant target has been flashed.  
+Firmware for SPI-RX is baked into Quicksilver depending on the board.  
 ExpressLRS passphrase use is encouraged.
 
 LQ/RSSI
@@ -127,7 +127,7 @@ We also advise setting Turtle mode to ON in **_Receiver_** tab which means all y
 
 ## OSD
 
-The osd menu is accessed by performing a RIGHT-RIGHT-RIGHT [stick gesture](/Features/#stick-gestures) on the ROLL/PITCH stick.
+The OSD menu is accessed by performing a **R,R,R** [stick gesture](/Features/#stick-gestures) on the ROLL/PITCH stick.
 
 OSD font and boot logo can be changed, select and upload.
 
@@ -140,7 +140,7 @@ All OSD element settings are also available via the OSD menu. (stick gesture rig
 Most settings are available via the osd menu.
 Use the ROLL/PITCH stick to navigate the menus, RIGHT enters a category and LEFT exits out to the previous level.
 After making changes, SAVE+EXIT
-If changes are made and osd is exited without SAVE+EXIT - changes will be temporarily applied but will not persist after battery disconnect.
+If changes are made and OSD is exited without SAVE+EXIT - changes will be temporarily applied but will not persist after battery disconnect.
 Some changes will cause a reboot after saving.
 
 ## HDZero
@@ -161,6 +161,8 @@ If selected via AUX or in OSD menu the motors will all spin on raising throttle 
 
 
 ## Runtime Targets
+
+During the flashing process the target configuration for each flight controller is loaded after the firmware for the MCU. This is called the Runtime Target. The information is stored in a .yaml file format which is easily editable. This allows for adding target variations and potentially home brewed flight controllers. The Target files can be downloaded from the profile tab of the configurator and uploaded again with any changes.
 
 
 
