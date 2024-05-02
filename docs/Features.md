@@ -12,10 +12,6 @@ In these Docs gestures will be indicated by U,U,U or D,D,D etc.
 | `DOWN`, `DOWN`, `DOWN`    | save to flash, including bind. if no other gesture was performed, calibrate gyro |
 | `RIGHT`, `RIGHT`, `RIGHT` | enter osd                                                                         |
 | `LEFT`, `RIGHT`, `LEFT`   | re-draw osd, useful for hdzero                                                    |
-| `UP`, `DOWN`, `UP`        | Cycle to next pid term (P, I, D)                                                  |
-| `UP`, `DOWN`, `DOWN`      | Cycle to next axis (Roll/Pitch, Yaw)                                              |
-| `UP`, `DOWN`, `RIGHT`     | Increase current pid value by 10%                                                 |
-| `UP`, `DOWN`, `LEFT`      | Decrease current pid value by 10%                                                 |
 
 ## Voltage
 
