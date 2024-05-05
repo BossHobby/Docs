@@ -10,7 +10,7 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 
 2. Check gyro orientation, make sure the model in the configurator moves as expected. (yaw does not show here)  
 
-3. Make any uart changes needed to get smartadio or msp-vtx and serial rx to work.  
+3. Make any uart changes needed to get smartaudio or msp-vtx and serial rx to work.  
 
 4. Adjust Dshot, Digital Idle, Turtle Throttle percent and prop direction to suit.  
 
