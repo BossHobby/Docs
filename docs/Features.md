@@ -95,7 +95,6 @@ Supported protocols:
 - ibus (Flysky, Futaba)
 - dsm2 (Spektrum)
 - dsmx (Spektrum)
-- Bayang
 - SPI-ELRS
 - SPI-Frsky
 - SPI-Flysky
