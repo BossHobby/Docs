@@ -122,7 +122,7 @@ We also advise setting Turtle mode to ON in **_Receiver_** tab which means all y
 
 ## OSD
 
-The OSD menu is accessed by performing a **R,R,R** [stick gesture](/Features/#stick-gestures) on the ROLL/PITCH stick.
+The OSD menu is accessed by performing a **R,R,R** [stick gesture](Features.md#stick-gestures) on the ROLL/PITCH stick.
 
 OSD font and boot logo can be changed, select and upload.
 

@@ -1,6 +1,6 @@
 Connect via usb as for flashing. Press the **_CONNECT_** button and select the offered port in the pop up window. Once connected you will be in the Profile tab.
 
-Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work refer to the [Troubleshooting Page](/Troubleshooting/).
+Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work refer to the [Troubleshooting Page](Troubleshooting.md).
 
 Every time you make a change on a tab remember to click **_APPLY_** before leaving the tab. There will always be a confirmation pop up after successfully applying changes.
 
@@ -16,7 +16,7 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 
 5. Set up rates and expo and load PID profiles. Filter adjustments should be made after a test flight, defaults are safe.  
 
-6. If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your transmitter and bind. Save the bind with [stick gesture](/Features/#stick-gestures) U,U,U on the pitch stick followed by D,D,D.  
+6. If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your transmitter and bind. Save the bind with [stick gesture](Features.md#stick-gestures) U,U,U on the pitch stick followed by D,D,D.  
 
 7. Set Aux channels and flight modes remembering that Quicksilver uses two position switch logic, high or low. Arm is already set on CH5. (Racemode and Horizon mode both require Angle to be active) If no other flight modes are set it will be in Acro/Rate mode only.  
 
@@ -32,7 +32,7 @@ Every time you make a change on a tab remember to click **_APPLY_** before leavi
 !!! Info
 
     Quicksilver calibrates the IMU (gyro) on every boot up of the fc. Connect lipo and place the quad down and still within 15 seconds to get correct calibration.  
-    You can also calibrate at any time by placing the quad level and using the [stick gesture](/Features/#stick-gestures) D,D,D
+    You can also calibrate at any time by placing the quad level and using the [stick gesture](Features.md#stick-gestures) D,D,D
 
 More detail is available below on the contents of each tab. There is a tooltip available for many settings, just click on the ``?``
 
@@ -42,7 +42,7 @@ Here is where you view and save profile information or load a saved profile. You
 
 Profiles are saved as .yaml files and can be edited in a code editor.
 
-Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Runtime targets](/Features/#runtime-targets))
+Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Runtime targets](Features.md#runtime-targets))
 
 We will supply template profiles for some bnf models [here](https://github.com/BossHobby/Templates)
 These are available within the configurator and are applied after flashing your target.
@@ -89,7 +89,7 @@ Unless otherwise recommended we advise leaving most of the settings here at defa
 
 ## Receiver
 
-[Supported protocols](/Features/#receivers)
+[Supported protocols](Features.md#receivers)
 
 As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.  
 (Some flight controllers may need a lipo connected to power the rx)
@@ -117,7 +117,7 @@ If only Arm is set you will be in Acro/Rate mode.
 
   
 
-To find out about other features operated by Aux channels check [Features](/Features/)
+To find out about other features operated by Aux channels check [Features](Features.md)
 
 <img src="/assets/img/QS_receiver_3.png" width=100%>
 

@@ -22,9 +22,9 @@ Open the Configurator. Click on the `Flash` tab to go to the firmware flash page
 
     Whilst in the `Flash` tab you will _**NOT**_ be using the `Connect` button in the top right
 
-![Flashing](/assets/img/QS_flash.gif)
+![Flashing](assets/img/QS_flash.gif)
 
-Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, or by clicking the `Reset to Bootloader` button on the GUI. If no compatible device is found, check the [Troubleshooting Page](/Troubleshooting/).
+Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, or by clicking the `Reset to Bootloader` button on the GUI. If no compatible device is found, check the [Troubleshooting Page](Troubleshooting.md).
 
 Select the _Source_ from which you want to retrieve a hex file to flash. Selecting BossHobby/QUICKSILVER will download the firmware from github, or choose LOCAL if you have built your own hex file from the source code.
 
@@ -39,7 +39,7 @@ Select the `Flash` button to initiate the flashing process. Progress bars will a
 
     It is best practise to power cycle the fc after flashing and before connecting to the configurator for setup
 
-After flashing, proceed to [Configuring Quicksilver](/Configuring-Quicksilver).
+After flashing, proceed to [Configuring Quicksilver](Configuring-Quicksilver.md).
 
 If your flash was unsuccessful for any reason - do not stress.  
 The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash.  
