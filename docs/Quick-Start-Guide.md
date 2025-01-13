@@ -16,6 +16,10 @@ Download and unzip the version which matches your operating system.
 
 ## Flashing a Hex File
 
+!!! warning
+    
+    Ensure your transmitter is turned **OFF** before attempting to flash firmware. This helps avoid issues getting into bootloader caused by some fcs which don't follow good design practise.
+
 Open the Configurator. Click on the `Flash` tab to go to the firmware flash page.
 
 !!! info
