@@ -23,6 +23,20 @@ Ensure `List All Devices` is selected in the options.
 Choose `QUICKSILVER` in the dropdown and select `USB serial (CDC)` in the right hand pane.  
 Click `Replace Driver` and wait for it to finish. Power cycle again then try the configurator.
 
+## Exceptions with Guillemot/Thrustmaster drivers. (Windows)
+
+The Guillemot/Thrustmaster Driver (GuiSTDFUDev) is 
+preventing Windows from replacing the driver.
+This driver is part of some Thrustmaster devices.
+[Zadig](https://zadig.akeo.ie/) says the driver was successfully replaced,
+but the Guillemot driver actually remains active 
+if you start [Zadig](https://zadig.akeo.ie/) again.
+In this case, uninstalling the Guillemot/Thrustmaster 
+driver is the first step. 
+
+![zadig_list_thrustmaster](assets/img/zadig_dfu_guillemot.png)
+
+
 ## BMI270 filter recommendations
 
 The bmi270 gyros internal filtering differs from what other common gyros (mpu, icm) come with.
