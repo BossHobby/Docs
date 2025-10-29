@@ -1,0 +1,805 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Quick-Start-Guide/">
+      
+      
+        <link rel="next" href="../Features/">
+      
+      
+      <link rel="icon" href="../assets/img/Logo_Clean.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Configuring Quicksilver - QUICKSILVER</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/style/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="quicksilver" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#quick-setup" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="QUICKSILVER" class="md-header__button md-logo" aria-label="QUICKSILVER" data-md-component="logo">
+      
+  <img src="../assets/img/Logo_Clean.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QUICKSILVER
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Configuring Quicksilver
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="quicksilver" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="quicksilver" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/BossHobby/QUICKSILVER/releases/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BossHobby/QUICKSILVER
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QUICKSILVER" class="md-nav__button md-logo" aria-label="QUICKSILVER" data-md-component="logo">
+      
+  <img src="../assets/img/Logo_Clean.svg" alt="logo">
+
+    </a>
+    QUICKSILVER
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/BossHobby/QUICKSILVER/releases/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BossHobby/QUICKSILVER
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick-Start-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Configuring Quicksilver
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Configuring Quicksilver
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#quick-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Quick Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#profile" class="md-nav__link">
+    <span class="md-ellipsis">
+      Profile
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Rates
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Rates">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stick-rates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stick Rates
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#throttle-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Throttle Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pid" class="md-nav__link">
+    <span class="md-ellipsis">
+      PID
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receiver" class="md-nav__link">
+    <span class="md-ellipsis">
+      Receiver
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Receiver">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#binding" class="md-nav__link">
+    <span class="md-ellipsis">
+      Binding
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#aux-channels" class="md-nav__link">
+    <span class="md-ellipsis">
+      Aux Channels
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blackbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blackbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#state" class="md-nav__link">
+    <span class="md-ellipsis">
+      State
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/Development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/Contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Configuring Quicksilver</h1>
+
+<p>Connect via usb as for flashing. Press the <strong><em>CONNECT</em></strong> button and select the offered port in the pop up window. Once connected you will be in the Profile tab.</p>
+<p>Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work refer to the <a href="../Troubleshooting/">Troubleshooting Page</a>.</p>
+<p>Every time you make a change on a tab remember to click <strong><em>APPLY</em></strong> before leaving the tab. There will always be a confirmation pop up after successfully applying changes.</p>
+<h2 id="quick-setup">Quick Setup</h2>
+<ol>
+<li>
+<p>Name your craft.  </p>
+</li>
+<li>
+<p>Check gyro orientation, make sure the model in the configurator moves as expected. (yaw does not show here)  </p>
+</li>
+<li>
+<p>Make any uart changes needed to get smartaudio or msp-vtx and serial rx to work.  </p>
+</li>
+<li>
+<p>Adjust Dshot, Digital Idle, Turtle Throttle percent and prop direction to suit.  </p>
+</li>
+<li>
+<p>Set up rates and expo and load PID profiles. Filter adjustments should be made after a test flight, defaults are safe.  </p>
+</li>
+<li>
+<p>If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your transmitter and bind. Save the bind with <a href="../Features/#stick-gestures">stick gesture</a> U,U,U on the pitch stick followed by D,D,D.  </p>
+</li>
+<li>
+<p>Set Aux channels and flight modes remembering that Quicksilver uses two position switch logic, high or low. Arm is already set on CH5. (Racemode and Horizon mode both require Angle to be active) If no other flight modes are set it will be in Acro/Rate mode only.  </p>
+</li>
+<li>
+<p>Set up OSD.  </p>
+</li>
+<li>
+<p>Check motor direction and order. (props off)  </p>
+</li>
+<li>
+<p>Test fly.  </p>
+</li>
+<li>
+<p>Enjoy 👍  </p>
+</li>
+</ol>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Quicksilver calibrates the IMU (gyro) on every boot up of the fc. Connect lipo and place the quad down and still within 15 seconds to get correct calibration.<br />
+You can also calibrate at any time by placing the quad level and using the <a href="../Features/#stick-gestures">stick gesture</a> D,D,D</p>
+</div>
+<p>More detail is available below on the contents of each tab. There is a tooltip available for many settings, just click on the <code>?</code></p>
+<h2 id="profile">Profile</h2>
+<p>Here is where you view and save profile information or load a saved profile. You can also name the craft and see which version of the firmware is on it.</p>
+<p>Profiles are saved as .yaml files and can be edited in a code editor.</p>
+<p>Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see <a href="../Features/#runtime-targets">Runtime targets</a>)</p>
+<p>We will supply template profiles for some bnf models <a href="https://github.com/BossHobby/Templates">here</a>
+These are available within the configurator and are applied after flashing your target.</p>
+<p><img src="/assets/img/QS_profile.png" width=100%></p>
+<h2 id="setup">Setup</h2>
+<p>In this tab are the basic hardware settings for the flight controller and anything attatched to uarts such as an RX or VTX.</p>
+<p>Select the uart your RX is attached to as well as the VTX Smart Audio connection if applicable. There is an HD VTX option here also to allow HD VTX control over msp.<br />
+Some VTX, especially HD ones, will need powered by lipo before connecting to the configurator in order to be detected.</p>
+<p>In the case of settings/VTX labels not showing then rebooting with a lipo attatched should cause the VTX to show up.</p>
+<p><img src="/assets/img/QS_setup_1.png" width=100%>
+<img src="/assets/img/QS_setup_2.png" width=100%></p>
+<h2 id="rates">Rates</h2>
+<p>Rates, PIDs and Filters are all set here.</p>
+<h3 id="stick-rates">Stick Rates</h3>
+<p><img src="/assets/img/QS_rates_1.png" width=100%>
+Choose Silverware rates (default) or Betaflight rates or Actual rates.
+Two rate profile settings are available.</p>
+<h3 id="throttle-settings">Throttle Settings</h3>
+<p><img src="/assets/img/QS_rates_2.png" width=100%></p>
+<h3 id="pid">PID</h3>
+<p><img src="/assets/img/QS_rates_3.png" width=100%></p>
+<p>There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and <strong><em>LOAD</em></strong></p>
+<h3 id="filter">Filter</h3>
+<p><img src="/assets/img/QS_rates_4.png" width=100%>
+A given filter pass can be disabled by setting the <code>Type</code> to <code>None</code>. For example a single gyro filter can be achieved by setting the <code>Gyro Pass 2 Type</code> to <code>None</code>.<br />
+Unless otherwise recommended we advise leaving most of the settings here at default values and asking in the <a href="https://discord.gg/wvWBymAxRH">Discord</a> server before changing.</p>
+<h2 id="receiver">Receiver</h2>
+<p><a href="../Features/#receivers">Supported protocols</a></p>
+<p>As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.<br />
+(Some flight controllers may need a lipo connected to power the rx)</p>
+<h3 id="binding">Binding</h3>
+<p>Expresslrs - If you are using an spi-rx and have a bindphrase enter it here and click <strong>save</strong>  </p>
+<p>Redpine/Frsky - Spi-rx will be in bind mode after flashing, press bind on your transmitter and wait until it says RX_STATUS_BOUND in the configurator, then use gesture <strong>U,U,U</strong> to turn off autobind and follow with gesture <strong>D,D,D</strong> to save the bind. It will say Bind Saved YES to confirm.</p>
+<p><img src="/assets/img/QS_receiver_1.png" width=100%>
+<img src="/assets/img/QS_receiver_4.png" width=100%>
+<img src="/assets/img/QS_receiver_2.png" width=100%></p>
+<h3 id="aux-channels">Aux Channels</h3>
+<p>Aux switches are only two way, high or low in Quicksilver.<br />
+You must set an arm switch, Levelmode is required for both Horizon and Racemode to work.<br />
+If only Arm is set you will be in Acro/Rate mode.   </p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<pre><code>The **Aux_Prearm** aux channel should be left set to **ON** unless you are using a prearm switch.
+</code></pre>
+</div>
+<p>To find out about other features operated by Aux channels check <a href="../Features/">Features</a></p>
+<p><img src="/assets/img/QS_receiver_3.png" width=100%></p>
+<h2 id="osd">OSD</h2>
+<p>Select and move various elements and alter callsign.</p>
+<p><img src="/assets/img/QS_osd_1.png" width=100%>
+<img src="/assets/img/QS_osd_2.png" width=100%></p>
+<h2 id="motor">Motor</h2>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>REMOVE PROPS BEFORE ACTIVATING ANYTHING ON THIS TAB</strong></p>
+</div>
+<p>A lipo will need to be connected for most of the functions to work.</p>
+<p>If your flight controller is in any orientation other than standard you can set the motor pins here.
+Use the <strong><em>Motor Test</em></strong> function to check position and rotation.
+If the direction of rotation needs changed the <strong><em>Esc Settings</em></strong> function will allow this.</p>
+<p><img src="/assets/img/QS_motor_1.png" width=100%></p>
+<h2 id="blackbox">Blackbox</h2>
+<p>Blackbox recordings can be activated by an AUX switch setup in the Receiver tab and will begin recording on arming when active. Select the sample rate to suit your use case. 1000Hz for analysis or 200Hz for Gyroflow use.</p>
+<p><img src="/assets/img/QS_blackbox_1.png" width=100%></p>
+<h2 id="state">State</h2>
+<p>Live information in time based graphs of many inputs and outputs from the flight controller.</p>
+<p>Use to check correct operation of rc inputs from your TX and to monitor gyro and accelerometer values.</p>
+<p><img src="/assets/img/QS_state_1.png" width=100%></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>

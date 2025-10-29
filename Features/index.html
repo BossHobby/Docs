@@ -1,0 +1,841 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../Configuring-Quicksilver/">
+      
+      
+        <link rel="next" href="../Troubleshooting/">
+      
+      
+      <link rel="icon" href="../assets/img/Logo_Clean.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>Features - QUICKSILVER</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/style/style.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="quicksilver" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#an-explanation-of-some-of-quicksilvers-feature-set" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="QUICKSILVER" class="md-header__button md-logo" aria-label="QUICKSILVER" data-md-component="logo">
+      
+  <img src="../assets/img/Logo_Clean.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            QUICKSILVER
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Features
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="quicksilver" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="quicksilver" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/BossHobby/QUICKSILVER/releases/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BossHobby/QUICKSILVER
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="QUICKSILVER" class="md-nav__button md-logo" aria-label="QUICKSILVER" data-md-component="logo">
+      
+  <img src="../assets/img/Logo_Clean.svg" alt="logo">
+
+    </a>
+    QUICKSILVER
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/BossHobby/QUICKSILVER/releases/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    BossHobby/QUICKSILVER
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Quick-Start-Guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Quick Start
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Configuring-Quicksilver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuring Quicksilver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Features
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#stick-gestures" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stick Gestures
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Voltage
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Filters
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Filters">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#a-quick-and-dirty-explanation" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Quick and Dirty Explanation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-d-term" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic D-term
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dynamic-notch-filter" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Notch Filter
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#throttle-d-term-attenuation-tda" class="md-nav__link">
+    <span class="md-ellipsis">
+      Throttle D-term attenuation (TDA)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#throttle-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Throttle Boost
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#torque-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Torque Boost
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stick-boost" class="md-nav__link">
+    <span class="md-ellipsis">
+      Stick Boost
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angle-strength" class="md-nav__link">
+    <span class="md-ellipsis">
+      Angle Strength
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#receivers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Receivers
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turtle-mode" class="md-nav__link">
+    <span class="md-ellipsis">
+      Turtle mode
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#osd" class="md-nav__link">
+    <span class="md-ellipsis">
+      OSD
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hdzero" class="md-nav__link">
+    <span class="md-ellipsis">
+      HDZero
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#blackbox" class="md-nav__link">
+    <span class="md-ellipsis">
+      Blackbox
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#motor-test" class="md-nav__link">
+    <span class="md-ellipsis">
+      Motor Test
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#runtime-targets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Runtime Targets
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/Development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../About/Contributing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="an-explanation-of-some-of-quicksilvers-feature-set">An explanation of some of Quicksilvers feature set</h1>
+<h2 id="stick-gestures">Stick Gestures</h2>
+<p>Quicksilver uses stick gestures for various functions. We use many inherited from Silverware plus some new ones.
+Stick gestures are performed using just the Pitch/Roll stick and must be done side to side or up and down, not at an angle. They are fairly timing sensitive so for example gesture down,down,down should be performed about the same speed you'd say it out loud.<br />
+In these Docs gestures will be indicated by U,U,U or D,D,D etc.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Stick Gesture</th>
+<th style="text-align: left;">Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>UP</code>, <code>UP</code>, <code>UP</code></td>
+<td style="text-align: left;">set bind flag</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>DOWN</code>, <code>DOWN</code>, <code>DOWN</code></td>
+<td style="text-align: left;">save to flash, including bind. if no other gesture was performed, calibrate gyro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>RIGHT</code>, <code>RIGHT</code>, <code>RIGHT</code></td>
+<td style="text-align: left;">enter osd</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LEFT</code>, <code>RIGHT</code>, <code>LEFT</code></td>
+<td style="text-align: left;">re-draw osd, useful for hdzero</td>
+</tr>
+</tbody>
+</table>
+<h2 id="voltage">Voltage</h2>
+<p>Quicksilver uses an algorithm which can be run on battery voltage while a pack is in use which estimates the resulting resting cell voltage if the quad were to land at that or any moment. We call this <em>Fuel gauge volts.</em><br />
+It lets you know "how much gas is left in the tank"<br />
+Filtered voltage in contrast is just the exact voltage measured by the adc and then run through a filter to smooth it just a bit for human readability.<br />
+The Low Voltage warning feature is tied to fuel gauge voltage. So select a resting cell voltage you want to achieve after the end of a flight - update low voltage cutoff to that number.... fly until the warning is pretty consistently triggered (not just a brief flash) .... and when you land, the pack voltage will come to rest pretty close to your warning level.<br />
+Note: the low voltage warning (which will flash the lipo cell count upon trigger) is always tied to fuel gauge volts no matter which voltage data you choose to display.
+So even while watching filtered voltage numbers - the cell count will still flash for low voltage based on fuel gauge volts.</p>
+<p>The best source for moment to moment voltage telemetry or monitoring is filtered volts. This is hard coded for radio telemetry and is the default option for osd display. </p>
+<p>For increased accuracy of the voltage features the voltage as measured by a multimeter or lipo tester of a fully charged lipo can be entered in the configurator along with the reported telemetry voltage from either the osd or your tx. Quicksilver will then calculate the correct actual value to use.</p>
+<h2 id="filters">Filters</h2>
+<h3 id="a-quick-and-dirty-explanation">A Quick and Dirty Explanation</h3>
+<p>The Gyro filters Quicksilver uses are all <em>lowpass filters</em> this means they allow signal/noise below the specified frequency through. In quadcopters we are generally interested in frequencies under about 120Hz for gyro data, however the cutoff point is not a straight line and follows a slope. The steepness of this slope is indicated by the number after the "pt" part of a filter with pt1 being the shallowest angle and the angle increases in order.<br />
+<img src="https://betaflight.de/wp-content/uploads/2021/05/800px-Butterworth_Filter_Orders.svg.png" width=75%><br />
+The steeper the slope the stronger the filter but the greater the latency, ideally we want as little filtering and therefore latency as our build allows but enough to keep motors cool and flight smooth.<br />
+Filters chained eg. pass 1 and pass 2 will multiply the effect and increasing the order of filter increase noise attenuation but adds latency.<br />
+We have found that 2 passes of a pt1 filter generally needs a frequency of about 90HZ and increasing the order can <em>sometimes</em> mean only needing one pass at a frequency a bit higher eg. pt3 at 100Hz or 110Hz.</p>
+<h3 id="dynamic-d-term">Dynamic D-term</h3>
+<p>Dynamic D term filter, a pt1 filter that moves up in cut frequency (Hz) with a parabolic relationship to applied throttle. The theory here is
+that propwash is most likely to occur as throttle is applied in dirty air - and propwash is most significantly caused by latency in the D term filtering. Therefore, the approach is to reduce latency in the lowest frequency range of D term filtering which is responsible for the most phase delay as increasing throttle is applied. Noise pass-through will obviously increase with this approach, but when used in combination with "throttle_dterm_attenuation" gains on D will also be lowered with increasing throttle. This mitigates much of the danger from reduced filtering while allowing D term to be more effective at eliminating propwash.<br />
+Motor noise related to rpm is known to have a quadratic relationship with increasing throttle. While a quadratic curve could have been selected for this feature, a faster moving parabolic one was selected in its place as the goal is not to follow motor noise, but to get the filter out of the way as fast as possible in the interest of better performance and handling through reduced D filter latency when you need it most.</p>
+<h3 id="dynamic-notch-filter">Dynamic Notch Filter</h3>
+<p>Add a dynamic notch filter pass to the gyro pipeline. A sdft algorithm is used to precisely track noise peaks in the gyro signal and then insert notch filters at these frequencies.</p>
+<h2 id="throttle-d-term-attenuation-tda">Throttle D-term attenuation (TDA)</h2>
+<p>Begins to reduce D-term above a set throttle percentage, <em>TDA breakpoint</em> to a maximum reduction, <em>TDA percent</em><br />
+It works as a companion to the Dynamic D-term filter. </p>
+<h2 id="throttle-boost">Throttle Boost</h2>
+<p>This adds high pass filtered throttle to the regular throttle, which will give more "sustained" power when making quick, throttle changing, inputs. It was pretty useful on brushed builds in acro, as those motors were a littler lazier to spool up and down.<br />
+It's not been tested very much with brushless motors.<br />
+This could affect your throttle management, but could be highly useful if you have a whoop thats a little lazy to pull out of maneuvers.<br />
+Suggested values are start with 0.1 and raise fairly slowly until you get the desired effect. 
+(We would appreciate feedback on this feature)</p>
+<h2 id="torque-boost">Torque Boost</h2>
+<p>Torque boost is a highly experimental feature and can smoke brushless motors fast. It is a low pass D term filter on motor outputs that will accelerate the response of the motors when the command to the motors is changing by increasing or decreasing the voltage thats sent.<br />
+It differs from throttle transient compensation in that it acts on all motor commands - not just throttle changes. this feature
+is very noise sensitive so D term specifically has to be lowered and gyro/D filtering may need to be increased.
+Recommendation right now is to keep boost at or below 2, drop your P gains a few points, then cut your D in half and
+retune it back up to where it feels good. About 60 to 65% of your previous D value seems to work.</p>
+<h2 id="stick-boost">Stick Boost</h2>
+<p>GENERAL SUMMARY OF THIS FEATURE:</p>
+<p>stickAccelerator and stickTransition are a more detailed version of the traditional D term setpoint weight and transition variables that you may be familiar with in other firmwares.
+The difference here is that we name the D term setpoint weight "Stick Accelerator" because it's actual function is to accelerate the response of the pid controller to stick inputs.
+Another difference is that negative stick transitions are possible meaning that you can have a higher stick acceleration near center stick which fades to a lower stick acceleration at full stick throws should you desire to see what that feels like. Traditionally we are only used to being able to transition from a low setpoint to a higher one.
+The final differences are that you can adjust each axis independently and also set up two seperate profiles so that you can switch "feels" in flight with the STICK_BOOST_PROFILE aux channel selection set up in the receiver section of config.h</p>
+<p>HOW TO USE THIS FEATURE:</p>
+<p>Safe values for stickAccelerator are from 0 to about 2.5 where 0 represents a "MEASUREMENT" based D term calculation and is the traditional Silverware PID controller, and a value of 1 represents an "ERROR" based D term calculation. Values above 1 add even more acceleration but be reasonable and keep this below about 2.5.</p>
+<p>Range of acceptable values for stickTransition are from -1 to 1. Do not input a value outside of this range. When stick transition is 0 - no stick transition will take place and stick acceleration will remain constant regardless of stick position. Positive values up to 1 will represent a transition where stick acceleration at it's maximum at full stick deflection and is reduced by whatever percentage you enter here at stick center. For example accelerator at 1 and transition at .3 means that there will be 30% reduction of acceleration at stick center, and acceleration strength of 1 at full stick.</p>
+<h2 id="angle-strength">Angle Strength</h2>
+<p>Angle Strength adjusts how your craft responds to external forces from bumps to stick inputs
+Quicksilver has a "small error angle strength" and a "large error angle strength" - If you want to adjust your craft's "overreactions" to collisions - the intended path of user intervention is to reduce your "large error angle strength"
+Conversely, if you want your craft to feel more reactive in response to small stick movements - then this is where you adjust your "small error angle strength"</p>
+<h2 id="receivers">Receivers</h2>
+<p>Supported protocols:</p>
+<ul>
+<li>sbus (Frsky XM+ etc, Crossfire, Flysky)</li>
+<li>crsf (Crossfire/Tracer, ELRS)</li>
+<li>ibus (Flysky, Futaba)</li>
+<li>dsm2 (Spektrum)</li>
+<li>dsmx (Spektrum)</li>
+<li>SPI-ELRS</li>
+<li>SPI-Frsky</li>
+<li>SPI-Flysky</li>
+<li>SPI-Redpine</li>
+</ul>
+<p>The correct protocol will be detected automatically as long as the uart the RX is soldered to is defined.<br />
+SPI connected RX will be detected if the SPI variant target has been flashed.<br />
+Firmware for SPI-RX is baked into Quicksilver depending on the board.<br />
+ExpressLRS passphrase use is encouraged.</p>
+<p>LQ/RSSI</p>
+<p>There are many ways to express what your radio link is doing, they all have limitations and depend on various environmental and hardware factors.
+What Quicksilver uses is packet rate as a percentage with 99 being maximum, no packets lost. ELRS users can select <strong><em>Direct</em></strong> from the LQI source dropdown for faster updates. This information lets you know how <strong><em>healthy</em></strong> your radio link is and can let you decide how much risk you want to take. Be aware that it can drop off very quickly once you are reaching the limit. A healthy radio link should remain in the 90-99 range.</p>
+<h2 id="turtle-mode">Turtle mode</h2>
+<p>Turtle mode or flip over after crash works by detecting when the craft is inverted and then, when arm is activated it will follow Turtle mode logic. Input on the Pitch/Roll stick will cause the opposite direction motors to instantly spin to the value set in the <strong><em>Setup</em></strong> tab for 2 seconds. If this results in a successful flip over then a disarm, rearm will allow normal flight again.</p>
+<p>For whoop style craft we recommend setting Turtle throttle to 100%
+Larger craft will need to have settings adjusted by 10% at a time to achieve a good result without stressing motors/esc too much, use caution!
+Turtle mode sttings are available in the OSD menu.</p>
+<p>We also advise setting Turtle mode to ON in <strong><em>Receiver</em></strong> tab which means all you need do is arm while inverted and it's active.</p>
+<h2 id="osd">OSD</h2>
+<p>The OSD menu is accessed by performing a <strong>R,R,R</strong> <a href="./#stick-gestures">stick gesture</a> on the ROLL/PITCH stick.</p>
+<p>OSD font and boot logo can be changed, select and upload.</p>
+<p>The OSD chip on the fc stores font and boot logo so if you want the Quicksilver boot logo you must upload a font once, it will then persist through future firmware flashes. </p>
+<p>Each element can be positioned by altering the x,y numbers (0,0 is top left corner of the screen) and the font style can be inverted.<br />
+Callsign must be upper case only.</p>
+<p>All OSD element settings are also available via the OSD menu. (stick gesture right,right,right)
+Most settings are available via the osd menu.
+Use the ROLL/PITCH stick to navigate the menus, RIGHT enters a category and LEFT exits out to the previous level.
+After making changes, SAVE+EXIT
+If changes are made and OSD is exited without SAVE+EXIT - changes will be temporarily applied but will not persist after battery disconnect.
+Some changes will cause a reboot after saving.</p>
+<h2 id="hdzero">HDZero</h2>
+<p>Hdzero setup is easy as you only have to specify the uart that the vtx is connected to, everything else will be set. Left,right,left stick gesture redraws Quicksilver OSD after using the HDZero menus. If using HDZero it is important to power on the vrx before vtx. 
+HDZero fonts are handled by the vrx or goggles and a custom Quicksilver HD font is available <a href="https://github.com/hd-zero/hdzero-osd-font-library">here</a></p>
+<h2 id="blackbox">Blackbox</h2>
+<p>Two sample rates are available, 1000Hz capturing all fields and 200Hz capturing filtered gyro and time data for Gyroflow use.
+Files can be downloaded in .btfl format for use with PidToolbox and .quic format for use with the Guacalyzer, our own basic analyzer, available <a href="https://bosshobby.github.io/Blackbox-Analyzer/">here</a></p>
+<h2 id="motor-test">Motor Test</h2>
+<p>If selected via AUX or in OSD menu the motors will all spin on raising throttle when armed but will not be under PID control, use the pitch/roll stick to activate a single motor depending on stick position, in order to check the function of that motor. Very useful for checking for bent shafts quickly. This is not a flying mode and care must be taken to not spin motors too fast.</p>
+<h2 id="runtime-targets">Runtime Targets</h2>
+<p>During the flashing process the target configuration for each flight controller is loaded after the firmware for the MCU. This is called the Runtime Target. The information is stored in a .yaml file format which is easily editable. This allows for adding target variations and potentially home brewed flight controllers. The Target files can be downloaded from the profile tab of the configurator and uploaded again with any changes.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "toc.integrate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.88dd0f4e.min.js"></script>
+      
+    
+  </body>
+</html>
