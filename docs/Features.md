@@ -42,6 +42,11 @@ Dynamic D term filter, a pt1 filter that moves up in cut frequency (Hz) with a p
 that propwash is most likely to occur as throttle is applied in dirty air - and propwash is most significantly caused by latency in the D term filtering. Therefore, the approach is to reduce latency in the lowest frequency range of D term filtering which is responsible for the most phase delay as increasing throttle is applied. Noise pass-through will obviously increase with this approach, but when used in combination with "throttle_dterm_attenuation" gains on D will also be lowered with increasing throttle. This mitigates much of the danger from reduced filtering while allowing D term to be more effective at eliminating propwash.  
 Motor noise related to rpm is known to have a quadratic relationship with increasing throttle. While a quadratic curve could have been selected for this feature, a faster moving parabolic one was selected in its place as the goal is not to follow motor noise, but to get the filter out of the way as fast as possible in the interest of better performance and handling through reduced D filter latency when you need it most.
 
+### Dynamic Notch Filter
+
+Add a dynamic notch filter pass to the gyro pipeline. A sdft algorithm is used to precisely track noise peaks in the gyro signal and then insert notch filters at these frequencies.
+
+
 ## Throttle D-term attenuation (TDA)
 
 Begins to reduce D-term above a set throttle percentage, _TDA breakpoint_ to a maximum reduction, _TDA percent_  
