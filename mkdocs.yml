@@ -1,8 +1,9 @@
 site_name: QUICKSILVER
+site_url: !ENV [PAGES_SITE_URL, 'https://docs.bosshobby.com/']
 
 repo_name: BossHobby/QUICKSILVER
 repo_url: https://github.com/BossHobby/QUICKSILVER/releases/
-edit_uri: 'https://github.com/BossHobby/Docs/tree/master/docs'
+edit_uri: !ENV [PAGES_EDIT_URI, 'https://github.com/BossHobby/Docs/tree/master/docs']
 
 nav:
   - Home: index.md
