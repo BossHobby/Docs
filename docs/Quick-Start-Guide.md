@@ -1,50 +1,44 @@
+# Quick Start
+
 ## Get the Quicksilver Configurator
 
-Quicksilver Configurator is a browser-based application that allows you to flash and configure QUICKSILVER on your quad through the USB port.
+Use the [develop configurator](https://config.bosshobby.com/develop/) with firmware from `develop`. The [release configurator](https://config.bosshobby.com/) follows the release line. Desktop downloads are available from [Configurator releases](https://github.com/BossHobby/Configurator/releases); choose the asset for your operating system and CPU architecture.
 
-There is an online version here:  
-[Quicksilver Configurator](https://config.bosshobby.com/)
+The web configurator needs USB and serial access. Use a supported browser such as desktop Chrome or Edge, or the desktop application if the browser reports that it is unsupported.
 
-The standalone version can be downloaded here:  
-[Quicksilver Configurator releases page](https://github.com/BossHobby/Configurator)
+## Before flashing
 
-Download and unzip the version which matches your operating system.
+Export your profile from **Profile** before an upgrade. Firmware changes can reset settings; check the restored configuration before using the craft. See [Upgrading](Upgrading.md) for backup contents and migration checks.
 
-- quic-config-windows-amd64.zip for Windows
-- quic-config-darwin-amd64.zip for Mac
-- quic-config-linux-amd64.zip for Linux
-
-## Flashing a Hex File
+**SPI receivers are disabled in current v2 develop builds.** Confirm that the craft has a supported UART receiver before upgrading; an onboard UART receiver is supported, but an SPI-only receiver cannot receive controls on this firmware.
 
 !!! warning
-    
-    Ensure your transmitter is turned **OFF** before attempting to flash firmware. This helps avoid issues getting into bootloader caused by some fcs which don't follow good design practise.
 
-Open the Configurator. Click on the `Flash` tab to go to the firmware flash page.
+    Remove propellers before flashing or configuring powered motors. Turn the transmitter off before entering the bootloader if the receiver prevents your board from entering DFU mode.
 
-!!! info
+## Flashing firmware
 
-    Whilst in the `Flash` tab you will _**NOT**_ be using the `Connect` button in the top right
+The **Firmware** panel is on the disconnected welcome page. Disconnect from the normal configuration session to return there. Flashing uses the bootloader connection; **Connect** opens a normal serial configuration session instead.
 
-![Flashing](assets/img/QS_flash.gif)
+1. Put the controller in DFU (bootloader) mode. Hold its boot button while plugging in USB, or use **Reset to bootloader** in the Firmware panel and select the controller's serial port.
+2. Choose a **Source**:
 
-Connect a compatible flight controller via usb cable. To flash the QUICKSILVER firmware, the flight controller must be in DFU mode (bootloader mode); this can be done by holding the boot button while plugging in the flight controller, or by clicking the `Reset to Bootloader` button on the GUI. If no compatible device is found, check the [Troubleshooting Page](Troubleshooting.md).
+    | Source | Use |
+    | --- | --- |
+    | Release | A published firmware release |
+    | Development Branch | A branch build; select `develop` for these docs |
+    | Pull Request | An available pull request build |
+    | Local | A `.hex` file you built or downloaded |
 
-Select the _Source_ from which you want to retrieve a hex file to flash. Selecting BossHobby/QUICKSILVER will download the firmware from github, or choose LOCAL if you have built your own hex file from the source code.
+3. Select the release, branch or pull request. Branch and pull request builds display their **Commit** so you can identify the firmware being flashed.
+4. Select **Vehicle** (`Multi`, `Rover` or `Wing`) when offered, then search for and select your exact **Target**. The target list is filtered by vehicle support. A target containing an SPI receiver definition does not enable that receiver in v2.
+5. Click **Flash firmware**, select the bootloader device when prompted, and wait for completion.
+6. Power-cycle the controller, click **Connect**, and choose its normal serial port.
 
-Next select the version (_Release_) to flash - make sure the hex file version is compatible with the gui version you are using by checking the [release notes](https://github.com/BossHobby/QUICKSILVER/releases).
+Current builds combine firmware for a vehicle/MCU with a runtime target describing the board. The configurator injects the selected target while flashing remote builds. For **Local**, use a board-specific HEX containing the correct target; the local-file flow does not offer target injection. See [Development](About/Development.md#building-firmware).
 
-Finally, select a _Target_ file which matches your hardware. If you don't know which file to flash, make sure to ask [on our discord](https://discord.gg/xZa6Pwwxvy), and get advice from someone experienced with the firmware. The naming convention for hex files is `<target_name>_<receiver_type>.<motor_type>`.  
-Receiver types with names like frsky or elrs are onboard spi connected receivers and targets without a receiver type refers to serial receivers connected to a uart.
+Vehicle selection is part of the firmware build. Loading a profile or changing a target's supported-vehicle list does not turn a multirotor build into a wing or rover build.
 
-Select the `Flash` button to initiate the flashing process. Progress bars will appear as the flashing process is performed and a feedback will be displayed in the upper right hand corner when complete
+If flashing fails, reconnect while holding the boot button and retry with the correct target. See [Troubleshooting](Troubleshooting.md) if no bootloader or serial device appears.
 
-!!! note
-
-    It is best practise to power cycle the fc after flashing and before connecting to the configurator for setup
-
-After flashing, proceed to [Configuring Quicksilver](Configuring-Quicksilver.md).
-
-If your flash was unsuccessful for any reason - do not stress.  
-The stm32 microprocessors will not be damaged or bricked through the flashing process but may appear unresponsive after a failed flash.  
-To recover the flight-controller, manually initiate dfu by plugging the flight controller in with the boot button pressed, and try again.
+Continue with [Configuring Quicksilver](Configuring-Quicksilver.md).

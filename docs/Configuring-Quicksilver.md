@@ -1,157 +1,147 @@
-Connect via usb as for flashing. Press the **_CONNECT_** button and select the offered port in the pop up window. Once connected you will be in the Profile tab.
+# Configure a controller
 
-Occasionally on a Windows pc the serial port doesn't show up. If this happens firstly make sure you have power cycled the fc by replugging the usb. If that doesn't work refer to the [Troubleshooting Page](Troubleshooting.md).
+Use this guide after [flashing and connecting](Quick-Start-Guide.md). It takes a controller from its initial profile to a checked setup on the **v2 develop** firmware and [develop configurator](https://config.bosshobby.com/develop/). Complete the common steps, then follow the output procedure for your vehicle.
 
-Every time you make a change on a tab remember to click **_APPLY_** before leaving the tab. There will always be a confirmation pop up after successfully applying changes.
+Remove propellers before powering aircraft motors. Support a rover with its wheels clear of the bench, and keep clear of servos and linkages. Output tests can drive motors even while normal arming is inhibited by the configurator.
 
-## Quick Setup
+## 1. Back up and confirm the firmware
 
-1. Name your craft.  
+In **Profile**, confirm the board target and vehicle, give the craft a name, and use **Save profile** to export its current settings. A target describes hardware; the firmware build selects Multi, Wing or Rover. Stop and correct a wrong target or vehicle before testing outputs.
 
-2. Check gyro orientation, make sure the model in the configurator moves as expected. (yaw does not show here)  
+Ordinary field edits stay pending until you press **Apply changes** in the bottom bar. Wait for **All changes applied**, then use **Reboot** if requested. Reconnect to check the saved values.
 
-3. Make any uart changes needed to get smartaudio or msp-vtx and serial rx to work.  
+**Load profile**, **Reset profile** and applying a community template write directly to the controller. Back up before using them. A template may supply useful board or tune settings, but you still need to check the resulting setup. See [backup files and save behavior](Upgrading.md#save-and-apply-behavior).
 
-4. Adjust Dshot, Digital Idle, Turtle Throttle percent and prop direction to suit.  
+## 2. Check orientation and battery readings
 
-5. Set up rates and expo and load PID profiles. Filter adjustments should be made after a test flight, defaults are safe.  
+### Board orientation
 
-6. If you are using a serial connected rx (uart) it will autodetct the protocol, turn on your transmitter and bind. Save the bind with [stick gesture](Features.md#stick-gestures) U,U,U on the pitch stick followed by D,D,D.  
+In **Setup**, move the craft through roll and pitch and check that the preview model follows each movement. Correct board rotation and the upside-down setting until the movement agrees. A reversed or swapped axis will also reverse or misdirect stabilization.
 
-7. Set Aux channels and flight modes remembering that Quicksilver uses two position switch logic, high or low. Arm is already set on CH5. (Racemode and Horizon mode both require Angle to be active) If no other flight modes are set it will be in Acro/Rate mode only.  
+Keep the controller still during boot-time gyro calibration. If the level reference needs recalibration, place the craft level and still and use [D,D,D](Features.md#stick-gestures) with a working receiver link.
 
-8. Set up OSD.  
+### Voltage and current
 
-9. Check motor direction and order. (props off)  
+In **Setup → Voltage & Current**:
 
-10. Test fly.  
+1. Connect a battery and compare the displayed voltage with a meter.
+2. Enter the measured and reported voltages in the calibration controls.
+3. Check the cell count. Zero selects automatic detection; verify the detected count with the actual battery.
+4. Set the low-voltage warning in **volts per cell**. Check current-meter calibration if the board provides a current sensor.
 
-11. Enjoy 👍  
+**Filtered voltage warnings** selects measured voltage for warnings. With it off, warnings use the compensated fuel-gauge estimate. The displayed voltage element and the warning source are separate choices; see [Voltage](Features.md#voltage).
 
+## 3. Assign the serial peripherals
 
-!!! Info
+In **Setup → Serial Ports**, match each function to the UART used by its wiring:
 
-    Quicksilver calibrates the IMU (gyro) on every boot up of the fc. Connect lipo and place the quad down and still within 15 seconds to get correct calibration.  
-    You can also calibrate at any time by placing the quad level and using the [stick gesture](Features.md#stick-gestures) D,D,D
+| Function | Connected device |
+| --- | --- |
+| Receiver (RX) | Serial receiver, including UART ExpressLRS |
+| VTX | SmartAudio or Tramp analog VTX control |
+| Digital VTX | MSP/DisplayPort digital video system |
+| GPS | Supported UBX GPS receiver |
 
-More detail is available below on the contents of each tab. There is a tooltip available for many settings, just click on the ``?``
+Apply changes and reboot before checking reception or peripheral status. Some peripherals require battery power; USB alone may not power them.
 
-## Profile
+**SPI receivers are disabled in current v2 builds.** An onboard receiver wired internally over UART is a serial receiver and can be used. An SPI-only receiver needs a supported serial replacement for v2 operation. See [receiver compatibility](Receivers-and-Passthrough.md#receiver-support-in-v2).
 
-Here is where you view and save profile information or load a saved profile. You can also name the craft and see which version of the firmware is on it.
+## 4. Verify the radio and switches
 
-Profiles are saved as .yaml files and can be edited in a code editor.
+<a id="protocol-and-binding"></a>
 
-Target configurations can be uploaded/downloaded here as well, they are also .yaml format (see [Runtime targets](Features.md#runtime-targets))
+### Get a valid receiver link
 
-We will supply template profiles for some bnf models [here](https://github.com/BossHobby/Templates)
-These are available within the configurator and are applied after flashing your target.
+In **Receiver**, use automatic serial protocol detection or select the protocol explicitly, then apply changes and reboot. With the transmitter on, confirm that the protocol is detected and the live channel meters move.
 
-<img src="/assets/img/QS_profile.png" width=100%>
+Bind using the receiver's own procedure. **Bind receiver** can send a bind command to compatible CRSF receivers; it does not program an ExpressLRS binding phrase. See [binding and telemetry](Receivers-and-Passthrough.md).
 
-## Setup
+### Check channels and calibration
 
-In this tab are the basic hardware settings for the flight controller and anything attatched to uarts such as an RX or VTX.
+Move one control at a time. Confirm Roll, Pitch, Yaw and Throttle for aircraft, or Throttle and Steering for a rover. Select the matching channel mapping and use **Channel calibration** to capture travel and center. Apply the result and check full travel and neutral again.
 
-Select the uart your RX is attached to as well as the VTX Smart Audio connection if applicable. There is an HD VTX option here also to allow HD VTX control over msp.  
-Some VTX, especially HD ones, will need powered by lipo before connecting to the configurator in order to be detected.
+A rover uses centered throttle, including when configured for forward-only drive. Aircraft use low throttle for the stopped position.
 
-In the case of settings/VTX labels not showing then rebooting with a lipo attatched should cause the VTX to show up.
+<a id="aux-channels"></a>
 
-<img src="/assets/img/QS_setup_1.png" width=100%>
-<img src="/assets/img/QS_setup_2.png" width=100%>
+### Assign arming and modes
 
-## Rates
+Assign **Arming** to the intended switch range and check its active indicator at every switch position. AUX functions use raw receiver channels and a **0–100% activation range**; stick-role mapping does not change the channel used by an AUX function.
 
-Rates, PIDs and Filters are all set here.
+Leave **Prearm** at **Always on** when unused. If assigned to a switch, activate prearm before arming and cycle it for the next arm. The generic profile assigns Arming and Idle up to the upper half of channel 5; a template or restored profile can change this.
 
-### Stick Rates
+Choose modes for the actual vehicle:
 
-<img src="/assets/img/QS_rates_1.png" width=100%>
-Choose Silverware rates (default) or Betaflight rates or Actual rates.
-Two rate profile settings are available.
+| Vehicle | Mode selection |
+| --- | --- |
+| Multi | Level off gives Acro. Horizon and Race require Level to be active |
+| Wing | Neither Level nor Acro gives Manual. Use separate switch ranges for Level and Acro |
+| Rover | Neither assistance mode gives Manual. Rate Throttle takes priority over Rate Assist |
 
-### Throttle Settings
+Check every mode indicator against the switch positions. Use the [AUX range example and function reference](Receivers-and-Passthrough.md#aux-range-example) for a three-position switch.
 
-<img src="/assets/img/QS_rates_2.png" width=100%>
+<a id="motor"></a>
+<a id="outputs"></a>
 
-### PID
+## 5. Configure and test the outputs
 
-<img src="/assets/img/QS_rates_3.png" width=100%>
+### Multirotor motor checks
 
-There are two slots to save a PID profile, choose the preset that most closely matches your craft from the drop down menu and **_LOAD_**
+In **Outputs**, map each motor to the physical output shown by the diagram. Set DShot speed, motor limit, Digital Idle and turtle throttle for the craft.
 
-### Filter
+With props removed and battery power connected:
 
-<img src="/assets/img/QS_rates_4.png" width=100%>
-A given filter pass can be disabled by setting the `Type` to `None`. For example a single gyro filter can be achieved by setting the `Gyro Pass 2 Type` to `None`.  
-Unless otherwise recommended we advise leaving most of the settings here at default values and asking in the [Discord](https://discord.gg/wvWBymAxRH) server before changing.
+1. Enable **Motor Test** and raise one output at a time.
+2. Confirm that the motor's physical position matches the diagram.
+3. Check actual rotation. Use **Normal** or **Reversed** on supported ESCs to change direction.
+4. Set **Prop Direction** to agree with the actual props-in or props-out arrangement.
+5. Stop the test before disconnecting.
 
-## Receiver
+Changing Prop Direction does not by itself prove the motors turn the right way. Check position and rotation separately.
 
-[Supported protocols](Features.md#receivers)
+### Wing and rover output checks
 
-As long as a uart is set for serial connected rx or an spi integrated rx is used the firmware will detect the correct protocol.  
-(Some flight controllers may need a lipo connected to power the rx)
+Follow [Wings and rovers](Wings-and-Rovers.md) to assign physical outputs, protocols, signed mixer weights, trim and travel limits. The guide includes an elevon example and explains PWM units.
 
-### Binding
+Check each output independently, then check pilot input and stabilization correction direction. A surface can respond correctly to the stick and still correct in the wrong direction when the craft moves. Verify neutral drive on a rover and ensure servos do not bind at either endpoint.
 
-Expresslrs - If you are using an spi-rx and have a bindphrase enter it here and click **save**  
+<a id="rates"></a>
+<a id="control"></a>
+<a id="stick-rates"></a>
+<a id="throttle-settings"></a>
+<a id="pid"></a>
+<a id="filter"></a>
 
-Redpine/Frsky - Spi-rx will be in bind mode after flashing, press bind on your transmitter and wait until it says RX_STATUS_BOUND in the configurator, then use gesture **U,U,U** to turn off autobind and follow with gesture **D,D,D** to save the bind. It will say Bind Saved YES to confirm.
+## 6. Choose control settings
 
+In **Control**, choose rates and a tune appropriate to the vehicle. For the first setup, retain appropriate filtering and avoid changing several tuning controls at once.
 
+Use [Rates, PID and filters](Tuning.md) for rate-profile selection, throttle curves, presets, gain controls and filter settings. Wing feedforward, Autotrim and Autolaunch, and rover steering assistance have their own procedures in [Wings and rovers](Wings-and-Rovers.md).
 
-<img src="/assets/img/QS_receiver_1.png" width=100%>
-<img src="/assets/img/QS_receiver_4.png" width=100%>
-<img src="/assets/img/QS_receiver_2.png" width=100%>
+<a id="osd"></a>
+<a id="blackbox"></a>
 
-### Aux Channels
+## 7. Set up flight information and recording
 
-Aux switches are only two way, high or low in Quicksilver.  
-You must set an arm switch, Levelmode is required for both Horizon and Racemode to work.  
-If only Arm is set you will be in Acro/Rate mode.   
+Configure the video system and OSD with [Video and OSD](Video-and-OSD.md). Keep **System Status**, battery information and the relevant radio-link information visible. Check the result in the goggles, including both layouts if you use the OSD profile switch.
 
-!!! info
-        The **Aux_Prearm** aux channel should be left set to **ON** unless you are using a prearm switch.
+For recording, follow [Blackbox and diagnostics](Blackbox-and-Diagnostics.md): select a preset and log rate, assign the Blackbox AUX function, and verify a recording before relying on logs for tuning.
 
-  
+For GPS-equipped aircraft or rovers, follow [Navigation](Navigation.md) to verify GPS and home telemetry. **RTH is implemented only for multirotors** and also needs valid barometer data and a captured home position.
 
-To find out about other features operated by Aux channels check [Features](Features.md)
+<a id="state"></a>
+<a id="diagnostics"></a>
 
-<img src="/assets/img/QS_receiver_3.png" width=100%>
+## 8. Verify the saved setup
 
-## OSD
+Apply changes, reboot if required, and reconnect. Confirm the saved UART assignments, channel mapping, AUX ranges and output settings. Use **Diagnostics** to investigate missing sensor or receiver data.
 
-Select and move various elements and alter callsign.
+Before operating the craft:
 
-<img src="/assets/img/QS_osd_1.png" width=100%>
-<img src="/assets/img/QS_osd_2.png" width=100%>
+- Confirm the selected mode, receiver response and output directions.
+- Check that the arm switch is off, throttle is safe, and the configured prearm condition is satisfied.
+- Stop output testing, end the configurator session and disconnect USB. Lower the arm switch again before attempting normal arming.
+- Verify receiver-loss behavior on the ground with props removed or drive wheels clear; use the [failsafe behavior reference](Features.md#failsafe-and-arming) to interpret it.
+- Export a new profile after the setup is verified.
 
-## Motor
-
-!!! warning
-
-    **REMOVE PROPS BEFORE ACTIVATING ANYTHING ON THIS TAB**
-
-A lipo will need to be connected for most of the functions to work.
-
-If your flight controller is in any orientation other than standard you can set the motor pins here.
-Use the **_Motor Test_** function to check position and rotation.
-If the direction of rotation needs changed the **_Esc Settings_** function will allow this.
-
-<img src="/assets/img/QS_motor_1.png" width=100%>
-
-## Blackbox
-
-Blackbox recordings can be activated by an AUX switch setup in the Receiver tab and will begin recording on arming when active. Select the sample rate to suit your use case. 1000Hz for analysis or 200Hz for Gyroflow use.
-
-<img src="/assets/img/QS_blackbox_1.png" width=100%>
-
-## State
-
-Live information in time based graphs of many inputs and outputs from the flight controller.
-
-Use to check correct operation of rc inputs from your TX and to monitor gyro and accelerometer values.
-
-<img src="/assets/img/QS_state_1.png" width=100%>
+If arming is inhibited or data is missing, use [Troubleshooting](Troubleshooting.md) before changing the tune.

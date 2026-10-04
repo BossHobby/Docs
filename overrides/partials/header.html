@@ -1,0 +1,28 @@
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Open navigation">
+      {% include ".icons/material/menu.svg" %}
+    </label>
+    <a href="{{ nav.homepage.url | url }}" class="md-header__button md-logo" aria-label="{{ config.site_name }} home" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+    <span class="qs-header-label">Documentation</span>
+    <div class="qs-header-spacer"></div>
+    {% if "material/search" in config.plugins %}
+      <label class="md-header__button md-icon" for="__search" aria-label="{{ lang.t('search') }}">
+        {% include ".icons/material/magnify.svg" %}
+      </label>
+      {% include "partials/search.html" %}
+    {% endif %}
+    {% if config.theme.palette %}
+      {% include "partials/palette.html" %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+    <a class="qs-configurator" href="https://config.bosshobby.com/develop/">
+      Configurator <span aria-hidden="true">↗</span>
+    </a>
+    <a class="md-header__button md-icon qs-source" href="{{ config.repo_url }}" aria-label="QUICKSILVER on GitHub" title="QUICKSILVER on GitHub">
+      {% include ".icons/fontawesome/brands/github.svg" %}
+    </a>
+  </nav>
+</header>

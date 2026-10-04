@@ -43,3 +43,17 @@ default branch to deploy to the `github-pages` environment. You can manually run
 branches without rebuilding.
 
 Run the deployment tests with `node --test script/pages.test.mjs` (Node.js 22).
+
+## Documentation for language models
+
+Every MkDocs build generates:
+
+- `llms.txt`: an index linking to raw Markdown and rendered pages.
+- `llms-full.txt`: all documentation in one text file, with scope/source revisions first and each document's path and URL identified.
+- Individual Markdown files at their source paths, such as `Features.md` and `About/Development.md`.
+
+These exports come from the site Markdown through `script/llms.py`; do not edit generated copies. URLs include the deployment prefix, so a develop build exposes `/develop/llms.txt` and links within that version. Relative links in a raw document resolve against its Markdown URL.
+
+Keep vehicle scope, enabled build features, units, prerequisites and limitations explicit when changing documentation. Update the checked source revisions and authority links in `docs/Scope-and-Reference.md` when re-auditing against develop. Retained driver code and visible UI controls do not establish that a feature is enabled.
+
+Run `python -m unittest discover -s script -p 'test_*.py'` in the virtual environment to build and verify exports and internal links for root, develop and feature-branch URLs. CI runs these checks and a strict site build.

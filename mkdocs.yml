@@ -5,11 +5,22 @@ repo_name: BossHobby/QUICKSILVER
 repo_url: https://github.com/BossHobby/QUICKSILVER/releases/
 edit_uri: !ENV [PAGES_EDIT_URI, 'https://github.com/BossHobby/Docs/tree/master/docs']
 
+hooks:
+  - script/llms.py
+
 nav:
   - Home: index.md
+  - Scope and Reference: Scope-and-Reference.md
   - Quick Start: Quick-Start-Guide.md
-  - Configuring Quicksilver: Configuring-Quicksilver.md
+  - Upgrading: Upgrading.md
+  - Controller Setup: Configuring-Quicksilver.md
+  - Rates, PID and Filters: Tuning.md
   - Features: Features.md
+  - Receivers and Passthrough: Receivers-and-Passthrough.md
+  - Wings and Rovers: Wings-and-Rovers.md
+  - Video and OSD: Video-and-OSD.md
+  - Navigation: Navigation.md
+  - Blackbox and Diagnostics: Blackbox-and-Diagnostics.md
   - Troubleshooting: Troubleshooting.md
   - About:
       - About/Development.md
@@ -17,27 +28,26 @@ nav:
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/img/Logo_Clean.svg
   favicon: assets/img/Logo_Clean.png
 
-  font:
-    text: Roboto
-    code: Roboto Mono
+  font: false
 
   palette:
-    # Palette toggle for dark mode
-    - scheme: slate
-      primary: quicksilver
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-
-    # Palette toggle for light mode
-    - scheme: default
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
       primary: quicksilver
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: quicksilver
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
   include_search_page: false
   search_index_only: true
@@ -46,12 +56,14 @@ theme:
   features:
     - navigation.instant
     - navigation.tracking
-    - toc.integrate
+    - navigation.sections
 
 extra_css:
   - assets/style/style.css
 
 markdown_extensions:
+  - toc:
+      title: On this page
   - tables
   - attr_list
   - admonition
@@ -62,5 +74,5 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
